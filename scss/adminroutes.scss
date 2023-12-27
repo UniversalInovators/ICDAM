@@ -1,0 +1,64 @@
+@import "_include-media.scss";
+@import "_config.scss";
+
+body{
+    margin: 0;
+    font-family: "Inter";
+    box-sizing: border-box;
+    padding: 4rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    @include media("<=xs"){
+        padding: 5vw;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+h1{
+    margin: 0;
+
+    @include media("<=xs"){
+        font-size: 12vw;
+        margin-bottom: 2rem;
+    }
+}
+
+.linkContainer{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.adminAnchors{
+    text-decoration: none;
+    font-family: 'Raleway-Regular';
+    margin: 1rem auto;
+    color: #000;
+    font-size: 4rem;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    width: max-content;
+
+    &:hover{
+        color: #39f;
+    }
+
+    @include media("<=lg",">md"){
+        font-size: 3rem;
+    }
+
+    @include media("<=md",">xs"){
+        font-size: 2rem;
+        margin: 0.5rem 0;
+    }
+
+    @include media("<=xs"){
+        font-size: 6vw;
+        margin: 1vw;
+    }
+}

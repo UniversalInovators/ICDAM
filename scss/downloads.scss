@@ -1,0 +1,291 @@
+@import "_config";
+
+.download_container {
+  box-sizing: border-box;
+  padding: 6rem 0 0 0;
+  margin: 0 auto;
+  width: 90%;
+
+  @include media("<=sm") {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.section_heading {
+  font-size: 3rem;
+  padding-bottom: 0.5rem;
+  width: max-content;
+  border-bottom: 3px solid #005499;
+  @include media("<=sm") {
+    box-sizing: border-box;
+    margin: 1rem auto;
+  }
+}
+
+.download_maincon {
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #fff;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+
+  a {
+    min-height: 24rem;
+    width: 22rem;
+    position: relative;
+    margin: 1rem 2rem;
+    border: 1px solid #e1e1e1;
+    overflow: hidden;
+    border-radius: 5px;
+
+    &:nth-child(1) {
+      &::after {
+        background-color: #005499;
+      }
+      .img_con {
+        background-color: #00549960;
+        img {
+          filter: invert(22%) sepia(35%) saturate(4532%) hue-rotate(188deg)
+            brightness(94%) contrast(108%);
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      &::after {
+        background-color: #008000;
+      }
+      .img_con {
+        background-color: #00800060;
+        img {
+          filter: invert(26%) sepia(96%) saturate(1530%) hue-rotate(99deg)
+            brightness(94%) contrast(103%);
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      &::after {
+        background-color: #800080;
+      }
+      .img_con {
+        background-color: #80008060;
+        img {
+          filter: invert(8%) sepia(91%) saturate(7492%) hue-rotate(298deg)
+            brightness(72%) contrast(136%);
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      &::after {
+        background-color: #ffa500;
+      }
+      .img_con {
+        background-color: #ffa50060;
+        img {
+          filter: invert(63%) sepia(14%) saturate(3402%) hue-rotate(1deg)
+            brightness(105%) contrast(103%);
+        }
+      }
+    }
+
+    &:nth-child(5) {
+      &::after {
+        background-color: #e60026;
+      }
+      .img_con {
+        background-color: #e6002660;
+        img {
+          filter: invert(14%) sepia(99%) saturate(6822%) hue-rotate(346deg)
+            brightness(88%) contrast(107%);
+        }
+      }
+    }
+
+    &:nth-child(6) {
+      &::after {
+        background-color: #000853;
+      }
+      .img_con {
+        background-color: #00085360;
+        img {
+          filter: invert(7%) sepia(80%) saturate(5536%) hue-rotate(237deg) brightness(63%) contrast(112%);
+        }
+      }
+    }
+
+    &:nth-child(7) {
+      &::after {
+        background-color: #ffc0cb;
+      }
+      .img_con {
+        background-color: #ffc0cb60;
+        img {
+          filter: invert(74%) sepia(15%) saturate(798%) hue-rotate(304deg) brightness(109%) contrast(101%);
+        }
+      }
+    }
+
+    &:nth-child(8) {
+      &::after {
+        background-color: #2fadc3;
+      }
+      .img_con {
+        background-color: #2fadc360;
+        img {
+          filter: invert(63%) sepia(21%) saturate(1395%) hue-rotate(141deg) brightness(91%) contrast(86%);
+        }
+      }
+    }
+
+    &:nth-child(9) {
+      &::after {
+        background-color: #686c88;
+      }
+      .img_con {
+        background-color: #686c8860;
+        img {
+          filter: invert(43%) sepia(12%) saturate(787%) hue-rotate(195deg) brightness(95%) contrast(88%);
+        }
+      }
+    }
+
+    &:nth-child(10) {
+      &::after {
+        background-color: #000000;
+      }
+      .img_con {
+        background-color: #00000060;
+        img {
+          filter: brightness(0);
+        }
+      }
+    }
+
+    &:nth-child(11) {
+      &::after {
+        background-color: #a05c0f;
+      }
+      .img_con {
+        background-color: #a05c0f60;
+        img {
+          filter: invert(31%) sepia(23%) saturate(4626%) hue-rotate(18deg) brightness(100%) contrast(88%);
+        }
+      }
+    }
+
+    &:nth-child(12) {
+      &::after {
+        background-color: #00a79e;
+      }
+      .img_con {
+        background-color: #00a79e60;
+        img {
+          filter: invert(40%) sepia(47%) saturate(2011%) hue-rotate(147deg) brightness(96%) contrast(107%);
+        }
+      }
+    }
+
+    &:nth-child(13) {
+      &::after {
+        background-color: #b02cd1;
+      }
+      .img_con {
+        background-color: #b02cd160;
+        img {
+          filter: invert(24%) sepia(58%) saturate(4108%) hue-rotate(277deg) brightness(89%) contrast(93%);
+        }
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: "Download";
+      bottom: 0;
+      left: 0;
+      min-height: 4rem;
+      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      width: 0;
+      opacity: 0;
+      font-family: "SourceSansPro";
+      transition: 0.3s ease;
+      @include media("<=sm") {
+        height: auto;
+        font-size: 1.2rem;
+        padding: 0.5rem 0;
+      }
+    }
+
+    &:hover {
+      &::after {
+        width: 100%;
+        opacity: 1;
+      }
+
+      .download_title {
+        width: 0;
+        opacity: 0;
+        font-size: 0;
+      }
+
+      .img_con {
+        img {
+          transform: translateY(-20px) rotate(-20deg);
+        }
+      }
+    }
+    @include media("<=sm") {
+      width: 90vw;
+      height: auto;
+      margin: 1rem 0;
+    }
+  }
+
+  .down_content {
+    .img_con {
+      height: 20rem;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        transition: 0.3s ease;
+        height: 80%;
+      }
+    }
+  }
+
+  .download_title {
+    width: 100%;
+    border-top: 1px solid #e1e1e1;
+    min-height: 4rem;
+    font-family: "SourceSansPro";
+    font-size: 1.6rem;
+    transition: 0.3s ease;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    @include media("<=sm") {
+      height: auto;
+      font-size: 1.2rem;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0.5rem 0;
+    }
+  }
+  @include media("<=sm") {
+    border-radius: 0;
+    flex-direction: column;
+  }
+}

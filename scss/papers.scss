@@ -1,0 +1,373 @@
+@import "_config";
+
+.papers_component {
+  min-height: 80vh;
+  padding-top: 6rem;
+  width: 90%;
+  margin: 0 auto 5rem auto;
+  position: relative;
+
+  @include media("<=sm") {
+    padding-top: 2rem;
+  }
+}
+
+.data-inactive {
+  display: none;
+}
+
+.paper_page_options {
+  position: absolute;
+  right: 0rem;
+  top: 3rem;
+  display: flex;
+
+  .poption {
+    padding: 1rem;
+    border: 0 solid #cccccc;
+    border-width: 0 1px 1px 0;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.5s ease;
+    -webkit-tap-highlight-color: transparent;
+    z-index: 2;
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 100%;
+      background-color: #005499c2;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      transform: translateY(100%);
+      transition: 0.5s ease;
+    }
+
+    &:hover {
+      color: #fff;
+
+      &::after {
+        height: 100%;
+        transform: translateY(0%);
+      }
+    }
+
+    @include media("<=sm") {
+      font-size: 12px;
+    }
+  }
+
+  .pactive {
+    border-bottom: 4px solid #005499;
+    font-weight: bold;
+    color: #fff;
+
+    &::after {
+      height: 100%;
+      transform: translateY(0%);
+    }
+
+    @include media("<=sm") {
+      font-weight: unset;
+    }
+  }
+
+  @include media("<=sm") {
+    position: static;
+  }
+}
+
+.paper_headline {
+  text-align: right;
+  border-bottom: 1px solid #005499;
+  padding-bottom: 0.8rem;
+  color: #005499;
+  width: max-content;
+
+  @include media("<=sm") {
+    font-size: 1.2rem;
+  }
+}
+
+.call_info {
+  background-color: #fff;
+  padding: 2rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-sizing: border-box;
+
+  p {
+    line-height: 2rem;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: justify;
+    font-size: 1.2rem;
+
+    @include media("<=sm") {
+      text-align: justify;
+      font-size: 1rem;
+      line-height: 1.2rem;
+    }
+  }
+}
+
+.plist_heading {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem 1.1rem;
+  box-sizing: border-box;
+  border: 0 solid #cccccc;
+  border-width: 1px 0 1px 0;
+  margin: 0;
+  background-color: #fff;
+
+  @include media("<=sm") {
+    font-size: 1.1rem;
+  }
+}
+
+.list_heading {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+  box-sizing: border-box;
+
+  @include media("<=sm") {
+    font-size: 1.2rem;
+    padding: 1rem 0 1rem 2rem;
+  }
+}
+
+.tlist_item {
+  background-color: #fff;
+  margin: 0;
+  padding-bottom: 2rem;
+
+  ul {
+    margin: 0;
+    list-style: none;
+
+    li {
+      font-family: Inter;
+      line-height: 2rem;
+      display: flex;
+      position: relative;
+
+      img {
+        height: 15px;
+        width: 15px;
+        position: absolute;
+        left: -1rem;
+        top: 3px;
+
+        @include media(">=xs") {
+          top: 8px;
+          left: -1.5rem;
+        }
+      }
+
+      @include media("<=sm") {
+        line-height: 1.4rem;
+        font-size: 14px;
+        margin: 0.5rem 0;
+        padding-left: 10px;
+      }
+    }
+
+    @include media("<=sm") {
+      padding: 0 1.4rem;
+    }
+  }
+
+  &:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  @include media("<=sm") {
+    padding-bottom: 1rem;
+    box-sizing: border-box;
+    margin: 1rem 0;
+  }
+}
+
+.Note-cfp {
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #cccccc;
+}
+
+.add_cfp {
+  box-sizing: border-box;
+  padding: 0 2rem;
+  margin: 0;
+  font-family: SourceSansPro;
+  line-height: 1.5rem;
+}
+
+.submission_container {
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 1rem;
+  box-sizing: border-box;
+
+  .sub_note {
+    margin: 0;
+    padding: 0 0 0 1rem;
+    font-family: "Inter";
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+
+    @include media("<=sm") {
+      width: auto;
+      font-weight: bold;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+
+  ul {
+    list-style: decimal;
+    font-family: Inter;
+    width: 50%;
+    text-align: justify;
+
+    li {
+      margin: 1rem 0;
+      line-height: 1.5rem;
+    }
+
+    @include media("<=sm") {
+      width: 90%;
+      text-align: left;
+      padding-left: 16px;
+
+      li {
+        line-height: 1.2rem;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.policy_note {
+  h2 {
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+    width: max-content;
+  }
+
+  ul {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+
+    li {
+      margin: 1.5rem 0;
+      width: 95%;
+    }
+  }
+}
+
+// Call For Special Sessions
+.call_sp_info {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+
+  .txt_decor {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 8px;
+    text-decoration-color: #005499;
+    width: max-content;
+    margin: 0;
+
+    @include media("<=sm") {
+      width: auto;
+      line-height: 2rem;
+    }
+  }
+
+  .invi_body {
+    line-height: 2rem;
+
+    @include media("<=sm") {
+      line-height: 1.4rem;
+      font-size: 14px;
+    }
+  }
+
+  .greeting {
+    margin: 1rem 0;
+  }
+
+  ul {
+    list-style: decimal;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    line-height: 2rem;
+
+    @include media("<=sm") {
+      line-height: 1.4rem;
+      font-size: 14px;
+    }
+  }
+
+  .download_sp_session_template {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    height: min-content;
+    width: max-content;
+
+    .download_button {
+      margin: 1rem 0;
+      border: 0;
+      outline: 0;
+      padding: 1rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: Inter;
+      transition: 0.3s;
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+
+      &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 0;
+        transition: 0.3s;
+        z-index: -1;
+        background-color: #005499;
+      }
+
+      &:hover {
+        color: #fff;
+
+        &::after {
+          top: 0;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

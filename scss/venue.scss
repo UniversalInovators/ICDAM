@@ -1,0 +1,34 @@
+@import "_config";
+
+.venue_container {
+  padding: 6rem 0 0 0;
+  width: 90%;
+  margin: 2rem auto;
+
+  @include media("<=sm") {
+    padding: 0;
+    margin: 2rem 0;
+    width: 100%;
+  }
+}
+
+.main_container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 70%;
+  margin: 0 auto;
+  padding: 2rem;
+
+  .section_heading {
+    margin: 0 auto;
+    padding-bottom: 0.2rem;
+    width: max-content;
+    border-bottom: 4px solid #005499;
+  }
+  @include media("<=sm") {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 0;
+  }
+}

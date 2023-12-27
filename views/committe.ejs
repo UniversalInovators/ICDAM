@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <title>ICDAM | International Conference on Data Analytics and Management</title>
+    <link rel="stylesheet" href="/assets/css/committe.css">
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/sidebar.css">
+    <link rel="icon" href="/assets/images/gurunanak.png">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X5ZTVY0WMV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-X5ZTVY0WMV');
+    </script>
+</head>
+
+<body>
+    <%- include("./Components/loader.ejs") %>
+        <%- include("./Components/header.ejs") %>
+            <%- include("./Components/sidebar.ejs") %>
+                <div class="committee_container">
+                    <div class="committee_page_options" data-active='0' tabindex="0">
+                        <span class="active_option">Steering Committee</span>
+                        <div class="coption_container vanish">
+                            <div class="coption cactive">Steering Committee</div>
+                            <div class="coption">Technical Program Committee</div>
+                            <div class="coption">Advisory Committee</div>
+                            <div class="coption">European Technical Board</div>
+                        </div>
+                    </div>
+
+                    <div class="steering_committee_container comm_container">
+                        <h1 class="section_heading">Steering Committee Members</h1>
+                        <div class="main_stcom_section">
+                            <h1>Patron(s)::</h1>
+                            <div class="patron_section com_section">
+                                <% for(let i=0; i<steerMemList.length; i++) { %>
+                                    <% if(steerMemList[i].steercompost_id===1) { %>
+                                        <div class="comlist_item">
+                                            <!-- <div class="profile_img"><img
+                                                    src="/assets/images/svgs/person-circle-outline.svg"></div> -->
+                                            <div class="comitem_info">
+                                                <span>
+                                                    <%= steerMemList[i].name %>
+                                                </span>
+                                                <span>(<%= steerMemList[i].information %>)</span>
+                                            </div>
+                                        </div>
+                                        <% } } %>
+                            </div>
+                            <h1>General Chair(s)::</h1>
+                            <div class="general_chair_section com_section">
+                                <% for(let i=0; i<steerMemList.length; i++) { %>
+                                    <% if(steerMemList[i].steercompost_id===2) { %>
+                                        <div class="comlist_item">
+                                            <!-- <div class="profile_img"><img
+                                                    src="/assets/images/svgs/person-circle-outline.svg"></div> -->
+                                            <div class="comitem_info">
+                                                <span>
+                                                    <%= steerMemList[i].name %>
+                                                </span>
+                                                <span>(<%= steerMemList[i].information %>)</span>
+                                            </div>
+                                        </div>
+                                        <% } } %>
+                            </div>
+                            <h1>Honorary Chair(s)::</h1>
+                            <div class="honorary_chair_section com_section">
+                                <% for(let i=0; i<steerMemList.length; i++) { %>
+                                    <% if(steerMemList[i].steercompost_id===3) { %>
+                                        <div class="comlist_item">
+                                            <!-- <div class="profile_img"><img
+                                                    src="/assets/images/svgs/person-circle-outline.svg"></div> -->
+                                            <div class="comitem_info">
+                                                <span>
+                                                    <%= steerMemList[i].name %>
+                                                </span>
+                                                <span>(<%= steerMemList[i].information %>)</span>
+                                            </div>
+                                        </div>
+                                        <% } } %>
+                            </div>
+                            <h1>Conference Chair(s)::</h1>
+                            <div class="conference_chair_section com_section">
+                                <% for(let i=0; i<steerMemList.length; i++) { %>
+                                    <% if(steerMemList[i].steercompost_id===4) { %>
+                                        <div class="comlist_item">
+                                            <!-- <div class="profile_img"><img
+                                                    src="/assets/images/svgs/person-circle-outline.svg"></div> -->
+                                            <div class="comitem_info">
+                                                <span>
+                                                    <%= steerMemList[i].name %>
+                                                </span>
+                                                <span>(<%= steerMemList[i].information %>)</span>
+                                            </div>
+                                        </div>
+                                        <% } } %>
+                            </div>
+                            <h1>Technical Program Chair(s)::</h1>
+                            <div class="tech_program_chair_section com_section">
+                                <% for(let i=0; i<steerMemList.length; i++) { %>
+                                    <% if(steerMemList[i].steercompost_id===5) { %>
+                                        <div class="comlist_item">
+                                            <!-- <div class="profile_img"><img
+                                                    src="/assets/images/svgs/person-circle-outline.svg"></div> -->
+                                            <div class="comitem_info">
+                                                <span>
+                                                    <%= steerMemList[i].name %>
+                                                </span>
+                                                <span>(<%= steerMemList[i].information %>)</span>
+                                            </div>
+                                        </div>
+                                        <% } } %>
+                            </div>
+                            <h1>Technical Program Co-Chair(s)::</h1>
+                            <div class="tech_program_co_chair_section com_section">
+                                <% for(let i=0; i<steerMemList.length; i++) { %>
+                                    <% if(steerMemList[i].steercompost_id===6) { %>
+                                        <div class="comlist_item">
+                                            <!-- <div class="profile_img"><img
+                                                    src="/assets/images/svgs/person-circle-outline.svg"></div> -->
+                                            <div class="comitem_info">
+                                                <span>
+                                                    <%= steerMemList[i].name %>
+                                                </span>
+                                                <span>(<%= steerMemList[i].information %>)</span>
+                                            </div>
+                                        </div>
+                                        <% } } %>
+                            </div>
+                            <h1>Publication Chair(s)::</h1>
+                            <div class="publication_chair_section com_section">
+                                <% for(let i=0; i<steerMemList.length; i++) { %>
+                                    <% if(steerMemList[i].steercompost_id===7) { %>
+                                        <div class="comlist_item">
+                                            <!-- <div class="profile_img"><img
+                                                    src="/assets/images/svgs/person-circle-outline.svg"></div> -->
+                                            <div class="comitem_info">
+                                                <span>
+                                                    <%= steerMemList[i].name %>
+                                                </span>
+                                                <span>(<%= steerMemList[i].information %>)</span>
+                                            </div>
+                                        </div>
+                                        <% } } %>
+                            </div>
+                            <h1>Convener(s)::</h1>
+                            <div class="convener_section com_section">
+                                <% for(let i=0; i<steerMemList.length; i++) { %>
+                                    <% if(steerMemList[i].steercompost_id===8) { %>
+                                        <div class="comlist_item">
+                                            <!-- <div class="profile_img"><img
+                                                    src="/assets/images/svgs/person-circle-outline.svg"></div> -->
+                                            <div class="comitem_info">
+                                                <span>
+                                                    <%= steerMemList[i].name %>
+                                                </span>
+                                                <span>(<%= steerMemList[i].information %>)</span>
+                                            </div>
+                                        </div>
+                                        <% } } %>
+                            </div>
+                            <h1>Co-Convener(s)::</h1>
+                            <div class="co_convener_section com_section">
+                                <% for(let i=0; i<steerMemList.length; i++) { %>
+                                    <% if(steerMemList[i].steercompost_id===9) { %>
+                                        <div class="comlist_item">
+                                            <!-- <div class="profile_img"><img
+                                                    src="/assets/images/svgs/person-circle-outline.svg"></div> -->
+                                            <div class="comitem_info">
+                                                <span>
+                                                    <%= steerMemList[i].name %>
+                                                </span>
+                                                <span>(<%= steerMemList[i].information %>)</span>
+                                            </div>
+                                        </div>
+                                        <% } } %>
+                            </div>
+                            <h1>Publicity Chair(s)::</h1>
+                            <div class="publicity_chair_section com_section">
+                                <% for(let i=0; i<steerMemList.length; i++) { %>
+                                    <% if(steerMemList[i].steercompost_id===10) { %>
+                                        <div class="comlist_item">
+                                            <!-- <div class="profile_img"><img
+                                                    src="/assets/images/svgs/person-circle-outline.svg"></div> -->
+                                            <div class="comitem_info">
+                                                <span>
+                                                    <%= steerMemList[i].name %>
+                                                </span>
+                                                <span>(<%= steerMemList[i].information %>)</span>
+                                            </div>
+                                        </div>
+                                        <% } } %>
+                            </div>
+                            <h1>Local Committee:</h1>
+                            <div class="local_committee_section com_section">
+                                <% for(let i=0; i<steerMemList.length; i++) { %>
+                                    <% if(steerMemList[i].steercompost_id===11) { %>
+                                        <div class="comlist_item">
+                                            <!-- <div class="profile_img"><img
+                                                    src="/assets/images/svgs/person-circle-outline.svg"></div> -->
+                                            <div class="comitem_info">
+                                                <span>
+                                                    <%= steerMemList[i].name %>
+                                                </span>
+                                                <span>(<%= steerMemList[i].information %>)</span>
+                                            </div>
+                                        </div>
+                                        <% } } %>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="technical_committee_container comm_container vanish">
+                        <h1 class="section_heading">Technical Program Committee</h1>
+                        <div class="main_techp_con">
+                            <% for(let i=0; i<techMemList.length; i++) { %>
+                                <div class="techp_item">
+                                    <div><strong>
+                                            <%= techMemList[i].name %>
+                                        </strong><span>:</span><span>
+                                            <%= techMemList[i].information %>
+                                        </span></div>
+                                </div>
+                                <% } %>
+                        </div>
+                    </div>
+
+                    <div class="advisory_committee_container comm_container vanish">
+                        <h1 class="section_heading">Advisory Committee</h1>
+                        <div class="main_adv_con">
+                            <% for(let i=0; i<advMemList.length; i++) { %>
+                                <div class="adv_item">
+                                    <div><strong>
+                                            <%= advMemList[i].name %>
+                                        </strong><span>:</span><span>
+                                            <%= advMemList[i].information %>
+                                        </span></div>
+                                </div>
+                                <% } %>
+                        </div>
+                    </div>
+
+                    <div class="european_tboard_container comm_container vanish">
+                        <h1 class="section_heading">European Technical Board</h1>
+                        <div class="main_euro_con">
+                            <% for(let i=0; i<euroMemList.length; i++) { %>
+                                <div class="euro_item">
+                                    <div><strong>
+                                            <%= euroMemList[i].name %>
+                                        </strong><span>:</span><span>
+                                            <%= euroMemList[i].information %>
+                                        </span></div>
+                                </div>
+                                <% } %>
+                        </div>
+                    </div>
+                </div>
+                <%- include("./Components/footer.ejs") %>
+                    <script src="/assets/scripts/operations.js"></script>
+</body>
+
+</html>

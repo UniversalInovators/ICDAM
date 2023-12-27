@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+        <meta name="keywords" content="conference, indo-european, icdam, ICDAM, Data, Analytics Management">
+        <title>ICDAM | International Conference on Data Analytics and Management</title>
+        <link rel="stylesheet" href="/assets/css/index.css">
+        <link rel="stylesheet" href="/assets/css/common.css">
+        <link rel="stylesheet" href="/assets/css/header.css">
+        <link rel="stylesheet" href="/assets/css/footer.css">
+        <link rel="stylesheet" href="/assets/css/sidebar.css">
+        <link rel="icon" href="/assets/images/gurunanak.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-X5ZTVY0WMV"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'G-X5ZTVY0WMV');
+        </script>
+        <style>
+            .indexing {
+                width: 95%;
+                padding: 1rem;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                text-transform: uppercase;
+                font-family: 'Roboto';
+            }
+
+            .indexItem {
+                border: 1px solid #c1c1c1;
+                margin: 1rem;
+                height: 90px;
+                width: 150px;
+            }
+
+            .indexImg {
+                object-fit: fill;
+                object-position: center;
+                width: 100%;
+                height: 100%;
+            }
+
+            .springer {
+                object-fit: contain;
+                background-color: #fff;
+                padding: 0 10px;
+            }
+
+            .objectivesSection {
+                background-color: #231834;
+                color: #fff;
+                border-radius: 10px;
+                padding: 1.5rem 1rem 2px;
+                width: 92%;
+                margin: auto;
+            }
+
+            .objectivesSection h2 {
+                font-family: 'Montserrat';
+                font-weight: bold;
+            }
+            .objectiveList {
+                text-align: justify;
+                padding: 1.5rem;
+                font-size: 18px;
+                line-height: 2rem;
+            }
+            .OrgAssPartners {
+                margin: 2rem auto;
+                background-color: #fff;
+                padding: 1rem;
+                border-radius: 10px;
+                width: 92%;
+
+            }
+            .publicationContainer {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+            .publicationContainer img {
+                margin: 1rem;
+                height: 20vw;
+                max-height: 100px;
+                min-height: 100px;
+            }
+
+            .speaker21 {
+                width: 220px;
+                height: 275px;
+                text-align: center;
+                padding: 10px;
+                margin: 10px;
+                vertical-align: super;
+                box-shadow: 2px 1px 3px 3px #eee;
+            }
+
+            .speaker21 p {
+                margin-top: 10px;
+            }
+
+            .speaker21 p span {
+                display: block;
+            }
+        </style>
+    </head>
+
+    <body>
+        <%- include("./Components/loader.ejs") %>
+        <%- include("./Components/header.ejs") %>
+        <%- include("./Components/sidebar.ejs") %>
+        <div
+            class="home_component">
+            <!-- slider component -->
+            <div class="slider_component">
+                <div class="item active-citem conf-info" style="width:99.99%">
+                    <div class="mask"></div>
+                    
+                    <img src="/assets/images/ICDAM BANNER 2024.jpg">
+                </div>
+                <!--
+                                                                        <div class="item inactive-citem col-pic">
+                                                                            <div class="mask"></div>
+                                                                            <img src="/assets/images/Zmiany-na-polkowickiej-uczelni-i-w-magistracie1.jpg">
+                                                                        </div>
+                                                                        <div class="item inactive-citem col-pic">
+                                                                            <div class="mask"></div>
+                                                                            <img src="/assets/images/PIET.jpeg">
+                                                                        </div>
+                                                                        <div class="item inactive-citem col-pic">
+                                                                            <div class="mask"></div>
+                                                                            <img src="/assets/images/IIS.jpg">
+                                                                        </div>
+                                                                        <div class="item inactive-citem col-pic">
+                                                                            <div class="mask"></div>
+                                                                            <img src="/assets/images/IES.jpg">
+                                                                        </div>
+                                                -->
+            </div>
+
+            <!-- About Section -->
+            <div
+                class="about_conf">
+
+                <!--
+                                                                        <p class="highlighted">
+                                                                           <h1 class="about-head">FREE WEBINAR FOR MS ASPIRANT</h1>
+                                                                            <h3>Get Admission in Top International University</h3>
+                                                                            <hr />
+                                                                           <img src="/assets/images/Free%20Webinar%20Banner-min.png"> 
+                                                                            <br>
+                                                                            <h1>Grab This Opportunity Now</h1>
+                                                                            <p>Get Top Quality Lectures And Counselling Session From World Class Teachers For Overseas MS Admission : Research Profile Focused Educational Consultants Win Admission In Top International Universities.
+                                                                            <p><strong>Date:</strong> 26<sup>th</sup> December 2021</p> 
+                                                                            <p><strong>Oragnized By:</strong> www.ui-educon.com</p>
+                                                                            <p><strong>Proceeding partner:</strong> Elsevier [SSRN] series.</p>
+                                                                            <p><a href="https://ui-educon.com/upcoming-webinars/">Click here to register</a>
+                                                                        </p>
+                                                                       
+                                                -->
+                <h1 class="about-head">About Conference</h1>
+                <hr/>
+                <p style="line-height: 1.5rem; text-align: justify;              font-size: 1rem;">International
+                                                                    Conference on Data Analytics and Management (ICDAM-2024) is organised with the objective of
+                                                                    bringing together innovative scientists, professors, research scholars, students and
+                                                                    industrial experts in the field of Computing and Communication to a common forum. The
+                                                                    primary goal of the conference is to promote the exchange of innovative scientific
+                                                                    information between researchers, developers, engineers, students, and practitioners. Another
+                                                                    goal is to promote the transformation of fundamental research into institutional and
+                                                                    industrialized research and to convert applied exploration into real time application.
+                                                                    Overall the conference will provide the researchers and attendees with prospects for
+                                                                    national and international collaboration and networking among universities and institutions
+                                                                    from India and abroad for promoting research. ICDAM- 2024 is organized by
+                    <b>London Metropolitan University, London, UK (Venue partner)
+                    </b>, in association with WSG University, Bydgoszcz Poland 
+                                                                     , Portalegre Polytechnic University, Portugal, Europe and BPIT, GGSIPU, Delhi on 15th - 16th June, 2024. All
+                                                                    the accepted papers (after double blinded peer review) will be published in
+                    <strong>Springer’s Lecture Notes on Networks & Systems [Indexing: SCOPUS, INSPEC, EI
+                                                                                Compendex, WoS] [Approved]</strong>
+                    and extended selected papers will be published in the special issues of
+                                                                    SCI/SCOPUS/WoS/DBLP/ACM indexed Journals.
+                </p>
+                <marquee width="95%" direction="left" style="margin-top:-15px">
+                    <strong style="color:#231834; font-size:18px">
+                        <br/>CONFERENCE WILL BE ORGANISED IN HYBRID MODE. PAPER REGISTERED FOR ONLINE PRESENTATION WILL BE GIVEN 40% DISCOUNT ON REGISTRATION FEES.<br/>
+                    </strong>
+                </marquee>
+                <!-- <p style="color: red;line-height: 1.5rem; text-align: justify;              font-size: 1rem;">
+                    All the accepted and presented paper in the conference will be published in the proceedings
+                                                                    of ICDAM-2024 indexed by Scopus and other leading databases. Some of the high-quality works
+                                                                    will be invited to submit their extended paper with minimum 70% extension in the following
+                                                                    Journals:
+
+
+                    <br>
+                    Extended Journal List for ICDAM-2024
+                </p>
+                <ol style="color:red; font-size: 20px; line-height: 35px;">
+                    <li>Intelligent Decision Technologies</li>
+                    <li>Intelligent Automation and Soft Computing</li>
+                    <li>Electronics, The MDPI Journal (SCI Indexed, IF 2.69)</li>
+                    <li>SUSTAINABILITY, THE MDPI JOURNAL (SCI INDEXED, IF 3.88)</li>
+                    <li>Sensors, MDPI Journal (SCI Indexed, IF 3.847)</li>
+                    <li>IEEE JOURNAL OF BIOMEDICAL AND HEALTH INFORMATICS(SCI Indexed, IF 7.0)</li>
+                    <li>Computer & Electrical Engineering Journal (Elsevier) SCI IF 4.15</li>
+                    <li>Expert Systems Journal (Wiley) SCI IF 2.58</li>
+                    <li>Alexandria Engineering Journal (Elsevier) SCI IF 6.6</li>
+
+
+                     <li>CMES-Computer Modeling in Engineering & Sciences, SCIE Indexed IF 1.59</li>
+                                                            
+                                                                                        <li>Intelligent Decision Technologies, Indexed by SCOPUS & ESCI</li>
+                                                                                        
+                                                                                        <li>IET Communications, SCIE Indexed IF 1.19</li>
+                                                                                        
+                                                                                        <li>Frontiers in Computational Neuroscience, SCIE Indexed IF 2.38</li>
+                                                                                        
+                                                                                        <li>CMC-Computers, Materials & Continua, SCIE Indexed IF 3.77</li> 
+                </ol> -->
+
+                <!-- <span>
+                    <a target="_blank" href="https://cmt3.research.microsoft.com/ICDAM2023" style="
+                                            width: 20px;
+                                            cursor: pointer;
+                                            text-decoration: none;
+                                            background-color:#231834;
+                                            padding: 10px;
+                                            border-radius: 5px;
+                                            color: #fff;
+                                            margin-top: 10;">Paper Submission Link</a>
+                </span> -->
+
+            </div>
+            <div class="objectivesSection">
+                <h2>Highlights</h2>
+                <div>
+                    <ul class="objectiveList">
+                        <li>
+                            The conference focusses in bridging the gap between Industry and
+                                                                                            academia by organizing the workshops by the industry experts on
+                                                                                            latest technologies for the participants.
+                        </li>
+                        <li>
+                            The conference is anticipated to attract a large number of high
+                                                                                            quality submissions and stimulate the cutting-edge research
+                                                                                            discussions among many academic pioneering researchers,
+                                                                                            scientists, industrial engineers, students from all around the
+                                                                                            world.
+                        </li>
+                        <li>
+                            Another goal of this conference is to provide opportunities for
+                                                                                            academics to receive informal in-depth feedback through
+                                                                                            discussions, and to enable them to establish contact with
+                                                                                            professionals in various countries and institutions and also to
+                                                                                            encourage regional and international communication and
+                                                                                            collaboration.
+                        </li>
+                        <li>
+                            Provide common platform for academic pioneering researchers,
+                                                                                            scientists, engineers and students to share their views and
+                                                                                            achievements.
+                        </li>
+                        <li>
+                            Focus on innovative issues at international level by bringing
+                                                                                            together the experts from different countries.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <section class="indexing">
+                <marquee width="95%" direction="left">
+                    <strong style="color:#231834; font-size:18px">
+                        <br/>ALL REGISTERED PAPERS WILL BE PUBLISHED IN SCOPUS PROCEEDING (Approved) AND EXTENDED PAPERS WILL BE SENT TO SCI and
+                                                                                SCOPUS JOURNALS.<br/>
+                    </strong>
+                </marquee>
+                <br/>
+
+                <h2>indexing</h2>
+                <div style="                                                    display: flex;flex-wrap:wrap;justify-content:center;           align-items:center">
+                    <div class="indexItem">
+                        <img src="../../assets/images/img01.png" alt="indexing" class="indexImg"/>
+                    </div>
+                    <div class="indexItem">
+                        <img src="../../assets/images/4.png" alt="indexing" class="indexImg springer"/>
+                    </div>
+                    <div class="indexItem">
+                        <img src="../../assets/images/img03.png" alt="indexing" class="indexImg springer"/>
+                    </div>
+                    <div class="indexItem">
+                        <img src="../../assets/images/img04.png" alt="indexing" class="indexImg springer"/>
+                    </div>
+                    <div class="indexItem">
+                        <img src="../../assets/images/img02.png" alt="indexing" class="indexImg springer"/>
+                    </div>
+                    <div class="indexItem">
+                        <img src="../../assets/images/5.png" alt="indexing" class="indexImg springer"/>
+                    </div>
+                    <div class="indexItem">
+                        <img src="../../assets/images/1.jpg" alt="indexing" class="indexImg"/>
+                    </div>
+                    <div class="indexItem">
+                        <img src="../../assets/images/2.jpg" alt="indexing" class="indexImg"/>
+                    </div>
+                    <div class="indexItem">
+                        <img src="../../assets/images/3.png" alt="indexing" class="indexImg springer"/>
+                    </div>
+                </div>
+            </section>
+            <!-- <section class="OrgAssPartners">
+                <h2>Keynote Speakers of ICDAM-2024 Conference</h2>
+                <div class="publicationContainer">
+                                        
+            </section> -->
+            <section class="OrgAssPartners">
+                <h2>Speakers of Previous ICDAM Conference</h2>
+                <div class="publicationContainer">
+                    <div class="speaker21">
+                        <img src="../../assets/images/Keynote- 6.jpg" alt=""/>
+                        <p>
+                            <strong>Prof. Vassil Vassilev</strong>
+                            <span>Head of the Cyber Security Research Centre at London Metropolitan University</span>
+                        </p>
+                    </div>
+                    <div class="speaker21">
+                        <img src="../../assets/images/Keynote- 7.jpg" alt=""/>
+                        <p>
+                            <strong>Sérgio Correia</strong>
+                            <span>Associate Professor at the Portalegre Polytechnic University, Portugal</span>
+                        </p>
+                    </div> 
+                    <div class="speaker21">
+                        <img src="../../assets/images/aninnda.jpg" alt=""/>
+                        <p>
+                            <strong>Aninda Bose
+                            </strong>
+                            <span>Springer Nature, Executive Editor</span>
+                        </p>
+                    </div> 
+                    <div class="speaker21">
+                        <img src="../../assets/images/alfredo.jpg" alt=""/>
+                        <p>
+                            <strong>Alfredo Cuzzocrea   
+                            </strong>
+                            <span>iDEA Lab, University of Calabria, Italy & Department of Computer Science, University of Paris City, Paris, France</span>
+                            
+                        </p>
+                    </div>
+                    
+                    <div class="speaker21">
+                        <img src="../../assets/images/Keynote -1.jpg" alt=""/>
+                        <p>
+                            <strong>Prof. Amir H. Gandomi</strong>
+                            <span>University of Technology, Sydney, Australia</span>
+                        </p>
+                    </div>
+                    
+                    <div class="speaker21">
+                        <img src="../../assets/images/carlo.jpg" alt=""/>
+                        <p>
+                            <strong>Prof. Giancarlo Fortino</strong>
+                            <span>DIMES University of Calabria(Unical),Italy</span>
+                        </p>
+                    </div>
+                    <div class="speaker21">
+                        <img src="../../assets/images/Keynote- 4.jpg" alt=""/>
+                        <p>
+                            <strong>Dr. Ali Kashif Bashir</strong>
+                            <span>Manchester Metropolitan University, United Kingdom</span>
+                        </p>
+                    </div>
+                    
+                    <div class="speaker21">
+                        <img src="../../assets/images/Keynote- 2.jpg" alt=""/>
+                        <p>
+                            <strong>Prof. A. K. Singh
+                            </strong>
+                            <span>National Institute of Technology, Kurukshetra, India</span>
+                        </p>
+                    </div>
+
+                    <div class="speaker21">
+                        <img src="../../assets/images/Keynote- 3.jpg" alt=""/>
+                        <p>
+                            <strong>Dr. Vipul Kumar Mishra
+                            </strong>
+                            <span>Bennett University, Greater Noida, India</span>
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+            <!-- Video/Photos of previous ICDAM -->
+            <section class="OrgAssPartners">
+                <h2>Photos of previous ICDAM</h2>
+                <div class="publicationContainer">
+                    <div class="speaker2"><img src="/assets/images/icdam2023/IMG-20231225-WA0008.jpg"></div>
+                    <div class="speaker2"><img src="/assets/images/icdam2023/IMG-20231225-WA0009.jpg"></div>
+                    <div class="speaker2"><img src="/assets/images/icdam2023/IMG-20231225-WA0010.jpg"></div>
+                    <div class="speaker2"><img src="/assets/images/icdam2023/IMG-20231225-WA0011.jpg"></div>
+                    <div class="speaker2"><img src="/assets/images/icdam2023/IMG-20231225-WA0012.jpg"></div>
+                    <div class="speaker2"><img src="/assets/images/icdam2023/IMG-20231225-WA0013.jpg"></div>
+                    <div class="speaker2"><img src="/assets/images/icdam2023/IMG-20231225-WA0014.jpg"></div>
+                    <div class="speaker2"><img src="/assets/images/icdam2023/IMG-20231225-WA0015.jpg"></div>
+                    <div class="speaker2"><img src="/assets/images/icdam2023/IMG-20231225-WA0016.jpg"></div>
+                    <div class="speaker2"><img src="/assets/images/icdam2023/IMG-20231225-WA0017.jpg"></div>
+                    <div class="speaker2"><img src="/assets/images/icdam2023/IMG-20231225-WA0019.jpg"></div>
+                    <div class="speaker2"><img src="/assets/images/icdam2023/IMG-20231225-WA0018.jpg"></div>
+
+                    <div class="speaker2"><img src="/assets/images/icdam2023/IMG-20231225-WA0019.jpg"></div>
+                    <div class="speaker2"><img src="/assets/images/icdam2023/IMG-20231225-WA0020.jpg"></div>
+                    <div class="speaker2"><img src="/assets/images/icdam2023/IMG-20231225-WA0021.jpg"></div>
+                    <div class="speaker2"><img src="/assets/images/icdam2023/IMG-20231225-WA0022.jpg"></div>
+                    <div class="speaker2"><img src="/assets/images/icdam2023/IMG-20231225-WA0023.jpg"></div>
+                    <div class="speaker2"><img src="/assets/images/icdam2023/IMG-20231225-WA0024.jpg"></div>
+                    <div class="speaker2"><img src="/assets/images/icdam2023/IMG-20231225-WA0025.jpg"></div>
+                    <div class="speaker2"><img src="/assets/images/icdam2023/IMG-20231225-WA0026.jpg"></div>
+                    <div class="speaker2"><img src="/assets/images/icdam2023/IMG-20231225-WA0027.jpg"></div>
+                    <div class="speaker2"><img src="/assets/images/icdam2023/IMG-20231225-WA0028.jpg"></div>
+                    <div class="speaker2"><img src="/assets/images/icdam2023/IMG-20231225-WA0029.jpg"></div>
+                
+            </div>
+        </section>
+        <section class="OrgAssPartners">
+            <h2>Videos of previous ICDAM</h2>
+            <div class="publicationContainer" style="justify-content:space-around;">
+                <div class="speaker2">
+                    <iframe width="370" height="235" src="https://www.youtube.com/embed/NsggggMhAhc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>  
+                <div class="speaker2">
+                    <iframe width="370" height="235" src="https://www.youtube.com/embed/33xYS6-N8Ds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>  
+                <div class="speaker2">
+                    <iframe width="370" height="235" src="https://www.youtube.com/embed/CLu3Zg6512E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>                
+                <div class="speaker2">
+                    <iframe width="370" height="235" src="https://www.youtube.com/embed/6mFvZZa7csY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="speaker2">
+                    <iframe width="370" height="235" src="https://www.youtube.com/embed/WtAGBu8Ra18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="speaker2">
+                    <iframe width="370" height="235" src="https://www.youtube.com/embed/YUrPPn1qfjI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="OrgAssPartners">
+            <h2>Participation in ICDAM:</h2>              
+                        <div  style="
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            align-items: flex-start;
+                            width: 100%;                            
+                            justify-content: space-around;"                           
+                          >      
+                            
+                          <img src="../../assets/images/flags/1.png"
+                            alt="" style="width:70px;margin:20px;border-radius: 50%;"/>
+                          <img src="../../assets/images/flags/2.png" style="width:70px;margin:15px;border-radius: 50%;"
+                            alt="" />
+                            <img src="../../assets/images/flags/7.png" style="width:70px;margin:15px;border-radius: 50%;"
+                            alt="" />
+                          <img src="../../assets/images/flags/15.png" style="width:70px;margin:15px;border-radius: 50%;"
+                            alt="" />
+                          <img src="../../assets/images/flags/3.png" style="width:70px;margin:15px;border-radius: 50%;"
+                            alt="" />
+                          
+                          
+                          <img src="../../assets/images/flags/8.png" style="width:70px;margin:15px;border-radius: 50%;"
+                            alt="" />
+                          <img src="../../assets/images/flags/9.png" style="width:70px;margin:15px;border-radius: 50%;"
+                            alt="" />
+                          
+                          <img src="../../assets/images/flags/13.png" style="width:70px;margin:15px;border-radius: 50%;"
+                            alt="" />
+                          <img src="../../assets/images/flags/14.png" style="width:70px;margin:15px;border-radius: 50%;"
+                            alt="" />
+                            <img src="../../assets/images/flags/6.png" style="width:70px;margin:15px;border-radius: 50%;"
+                            alt="" />
+                          
+                            <img src="../../assets/images/flags/23.png" style="width:70px;margin:15px;border-radius: 50%;"
+                            alt="" />
+                          <img src="../../assets/images/flags/24.png" style="width:70px;margin:15px;border-radius: 50%;"
+                            alt="" />
+                          <img src="../../assets/images/flags/16.png" style="width:70px;margin:15px;border-radius: 50%;"
+                            alt="" />
+                          <img src="../../assets/images/flags/17.png" style="width:70px;margin:15px;border-radius: 50%;"
+                            alt="" />
+                          <img src="../../assets/images/flags/18.png" style="width:70px;margin:15px;border-radius: 50%;"
+                            alt="" />
+                          <img src="../../assets/images/flags/19.png" style="width:70px;margin:15px;border-radius: 50%;"
+                            alt="" />
+                          <img src="../../assets/images/flags/20.png" style="width:70px;margin:15px;border-radius: 50%;"
+                            alt="" />
+                            <img src="../../assets/images/flags/10.png" style="width:70px;margin:15px;border-radius: 50%;"
+                            alt="" />
+                          <img src="../../assets/images/flags/11.png" style="width:70px;margin:15px;border-radius: 50%;"
+                            alt="" />
+                          <img src="../../assets/images/flags/12.png" style="width:70px;margin:15px;border-radius: 50%;"
+                            alt="" />
+                          <img src="../../assets/images/flags/21.png" style="width:70px;margin:15px;border-radius: 50%;"
+                            alt="" />
+                          <img src="../../assets/images/flags/22.png" style="width:70px;margin:15px;border-radius: 50%;"
+                            alt="" />
+                            <img src="../../assets/images/flags/4.png" style="width:70px;margin:15px;border-radius: 50%;"
+                            alt="" />
+                          <img src="../../assets/images/flags/5.png" style="width:70px;margin:15px;border-radius: 50%;"
+                            alt="" />
+                           
+                         
+                                    
+                                 
+                        </div>
+                    </section> 
+
+
+        <div class="marquee_section">
+            <div class="downloads_marquee marquee_list" id="downloads">
+                <div class="marquee_headline">Downloads</div>
+                <div class="item-list">
+                    <div class="itemdlist">
+                        <span>Manu Script Guidelines</span>
+                        <span><img src="/assets/images/svgs/download-outline.svg" alt=""></span>
+                    </div>
+                    <div class="itemdlist">
+                        <span>Checklist</span>
+                        <span><img src="/assets/images/svgs/download-outline.svg" alt=""></span>
+                    </div>
+                    <div class="itemdlist">
+                        <span>Springer Word Template</span>
+                        <span><img src="/assets/images/svgs/download-outline.svg" alt=""></span>
+                    </div>
+                    <div class="itemdlist">
+                        <span>Springer La Tex Template</span>
+                        <span><img src="/assets/images/svgs/download-outline.svg" alt=""></span>
+                    </div>
+                    <!--
+                                                                                                    <div class="itemdlist">
+                                                                                                        <span>Consent to Publish Form Springer</span>
+                                                                                                        <span><img src="/assets/images/svgs/download-outline.svg" alt=""></span>
+                                                                                                    </div>
+                                                                    -->
+                </div>
+            </div>
+
+
+            <div class="impdates_marquee marquee_list" id="impdates">
+                <div class="marquee_headline">Important Dates</div>
+                <div class="item-list">
+                    <div class="itemilist">
+                        <span class="devent">Registration Deadline</span>
+                        <span class="date">30th March 2024</span>
+                    </div>
+                    <div class="itemilist">
+                        <span class="devent">Submission Deadline</span>
+                        <span class="date">20th February 2024</span>
+                    </div>
+                    <div class="itemilist">
+                        <span class="devent">Notification of Accept/Reject</span>
+                        <span class="date">15th March 2024</span>
+                    </div>
+                    <div class="itemilist">
+                        <span class="devent">Final Paper Due</span>
+                        <span class="date">20th May 2024</span>
+                    </div>
+                    <div class="itemilist">
+                        <span class="devent">Conference Date</span>
+                        <span class="date">15th - 16th June, 2024</span>
+                    </div>
+                </div>
+            </div>
+            <div class="notices_marquee marquee_list">
+                <div class="marquee_headline">Notices</div>
+                <div class="item-list">
+                    <div class="itemnlist">ICDAM-2024 will be held at London Metropolitan University</div>
+                    <!-- <div class="itemnlist">DUE TO PANDEMIC CONDITIONS CONFERENCE WILL HAPPEN IN ONLINE MODE</div> -->
+                    <!--
+                                                                                                    <div class="itemnlist">ICDAM-2022is Jointly organised by JAN WYZYKOWSKI UNIVERSITY,
+                                                                                                        POLAND & PANIPAT INSTITUTE OF ENGINEERING AND TECHNOLOGY, INDIA</div>
+                                                                                                    <div class="itemnlist">Proceedings of ICDAM 2022has been approved by Springer. All the
+                                                                                                        accepted papers will be published in Springer “Lecture Notes on Data Engineering and
+                                                                                                        Communications Technologies” (https://www.springer.com/series/15362).</div>
+                                                                                                    <div class="itemnlist">The selected high quality extended papers of the conference will
+                                                                                                        be invited to submit for publication in the special issues of the following
+                                                                                                        journals: Multimedia Tools and Applications (SCI), Expert Systems (SCI), Electronics
+                                                                                                        (SCI), IJHPSA (Scopus), IJICT (Scopus), IJPCC (Scopus, ESCI), IJPE (Scopus) and many
+                                                                                                        more.
+                                                                                                    </div>
+                                                                                                    <div class="itemnlist">
+                                                                                                        As per the review reports some of the papers can be accepted for publication in
+                                                                                                        Elsevier SSRN series.
+                                                                                                    </div>
+                                                                    -->
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Academic Partners -->
+
+        <section class="OrgAssPartners">
+            <h2>Academic Partners</h2>
+            <div class="publicationContainer">
+                <div class="speaker2">
+                    <img src="../../assets/images/LMU.png" alt=""/>
+
+                </div>
+                <div class="speaker2">
+                    <img src="../assets/images/KARKONOSZA-logo.JPG" alt=""/>
+
+                </div>
+                <div class="speaker2">
+                    <img src="../../assets/images/Portugal_univ.png" alt=""/>
+
+                </div>
+                <div class="speaker2">
+                    <img src="../assets/images/partners/13.png" alt=""/>
+
+                </div>
+
+
+                <div class="speaker2">
+                    <img src="/assets/images/bpit-logo.png"/>
+                </div>
+
+            </div>
+        </section>
+
+        <%- include("./Components/footer.ejs") %></body>
+</html></div><script src="/assets/scripts/jquery.js"></script><script src="/assets/scripts/operations.js"></script><script src="/assets/scripts/smoothscroll.js"></script></body></html>

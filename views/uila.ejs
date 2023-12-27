@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <title>ICDAM | International Conference on Data Analytics and Management</title>
+    <link rel="stylesheet" href="/assets/css/publication.css">
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/sidebar.css">
+    <link rel="icon" href="/assets/images/gurunanak.png">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <style>
+        .award{
+            background-color: #005499;
+            width: 16.5rem;
+            height: fit-content;
+            padding: 1rem;
+            margin:0.5rem;
+            color: white;
+            border-radius: 5px;
+        }
+        .award-heading{
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        .award-desc{
+            font-size: 1rem;
+            text-align: justify;
+        }
+    </style>
+    <script>
+        
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X5ZTVY0WMV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-X5ZTVY0WMV');
+    </script>
+</head>
+
+<body>
+    
+    <%- include("./Components/loader.ejs") %>
+        <%- include("./Components/header.ejs") %>
+            <%- include("./Components/sidebar.ejs") %>
+            <%const awardsArray = [
+            {
+              awardHeading: "Lifetime Achievement Award",
+              awardDescription: "The Lifetime Achievement Award would be presented to an individual member whose long-term efforts, dedication, and sustained commitment has supported the organization/ Society/ Research/ Mankind."
+            },
+            {
+              awardHeading: "Young Researcher Award",
+              awardDescription: "To the research scholars, academicians and professionals from industries for their research work published in any International Journals or Conferences, having age not more than 35."
+            },
+            {
+              awardHeading: "Best Researcher Award",
+              awardDescription: "To the research scholars, academicians and professionals from industries for their research work published in any International Journals or Conferences."
+            },
+            {
+              awardHeading: "Best Head of Department Award",
+              awardDescription: "For the HOD's of various Academic Departments of Educational Institutes for their excellence in leadership and management."
+            },
+            {
+              awardHeading: "Best Dean of Department Award",
+              awardDescription: "For the Dean's of various Academic Departments of Educational Institutes for their excellence in leadership and management."
+            },
+            {
+              awardHeading: "Best Teacher Award",
+              awardDescription: "For teaching professionals for excellence in teaching."
+            },
+            {
+              awardHeading: "Best Research Paper Award",
+              awardDescription: "For writing the excellent paper published in reputed journal like Nature."
+            },
+            {
+              awardHeading: "Best Principal Award",
+              awardDescription: "Award for the Principals of the Higher Educational Institutes."
+            },
+            {
+              awardHeading: "Best Research Thesis Award",
+              awardDescription: "Award to the Ph.D. students for their thesis."
+            },
+            {
+              awardHeading: "Best Research Project Award",
+              awardDescription: "Award to the UG/PG/PhD students for project."
+            },
+            {
+              awardHeading: "Best PG Thesis Award",
+              awardDescription: "Award to the PG students for their thesis."
+            },
+            {
+              awardHeading: "Best Director Award",
+              awardDescription: "Award for the Directors of the Educational Institutes."
+            },
+            {
+              awardHeading: "Highly Cited Paper Award",
+              awardDescription: "For the paper which is cited highly on Google scholar."
+            },
+            {
+              awardHeading: "Best PhD Thesis Award",
+              awardDescription: "Award to the best PhD thesis."
+            },
+            {
+              awardHeading: "Best Innovation Award",
+              awardDescription: "For the best innovation."
+            },
+            {
+              awardHeading: "Best Entrepreneur Award",
+              awardDescription: "Award to the entrepreneur of the year."
+            },
+            {
+              awardHeading: "Researcher of the Year",
+              awardDescription: "Award for Researcher of the year."
+            },
+            {
+              awardHeading: "Teaching Excellence Award",
+              awardDescription: "Award for Teaching Excellence."
+            },
+            {
+              awardHeading: "Professor of the Year",
+              awardDescription: "Award for Professor of the year."
+            },
+            {
+              awardHeading: "Scientist of the Year",
+              awardDescription: "Award for Scientist of the year."
+            },
+            {
+              awardHeading: "Faculty of the Year",
+              awardDescription: "Award for Faculty of the year."
+            },
+            {
+              awardHeading: "Research Achievement Award",
+              awardDescription: "Award for Research Achievement."
+            },
+            {
+              awardHeading: "Academic Professional Award",
+              awardDescription: "Award for Academic Professional."
+            },
+            {
+              awardHeading: "Administrator of the Year",
+              awardDescription: "Award for Administrator of the year."
+            },
+            {
+              awardHeading: "Supervisor of the Year",
+              awardDescription: "Award for Supervisor of the year."
+            },
+            {
+              awardHeading: "Outstanding Academic Leader of the Year",
+              awardDescription: "Award for Outstanding Academic Leader of the year."
+            },
+            {
+              awardHeading: "START-UP of the Year Award",
+              awardDescription: "Award to best start-up."
+            },
+            {
+              awardHeading: "Young Innovator Award",
+              awardDescription: "Award to young Innovator."
+            },
+            {
+              awardHeading: "Womanovator Award",
+              awardDescription: "Award given to womanovator."
+            },
+            {
+              awardHeading: "Social Initiative taken by Individuals",
+              awardDescription: "Award given to Social Initiative taken by Individuals."
+            },
+            {
+              awardHeading: "International Research Project award",
+              awardDescription: "Award given to International Research Project award."
+            },
+            {
+              awardHeading: "National Research award",
+              awardDescription: "Award given to National Research award."
+            },
+            {
+              awardHeading: "Multidisciplinary Research award",
+              awardDescription: "Award given to Multidisciplinary Research award."
+            },
+            {
+              awardHeading: "Multidisciplinary International Research award",
+              awardDescription: "Award given to Multidisciplinary International Research award."
+            },
+            {
+              awardHeading: "Transdisciplinary research award with International impact",
+              awardDescription: "Award given to Transdisciplinary research award with International impact."
+            },
+          ];
+          const awardsArray2 = [
+  {
+    awardHeading: "Best College of the Year (BBA/Bcom/BA/Bsc)",
+    awardDescription: "This award is to recognize the institutes with excellent courses and pedagogy in undergrad level."
+  },
+  {
+    awardHeading: "Institute offering best certification courses",
+    awardDescription: "Institute offering certificate courses in language, vocational courses, technology, multimedia, music & dance, skill enhancement, etc."
+  },
+  {
+    awardHeading: "University of the Year (North)",
+    awardDescription: "Awarded to an institution that has demonstrated exceptional performance in the past academic year in the northern region."
+  },
+  {
+    awardHeading: "University of the Year (South)",
+    awardDescription: "Awarded to an institution that has demonstrated exceptional performance in the past academic year in the southern region."
+  },
+  {
+    awardHeading: "University of the Year (East)",
+    awardDescription: "Awarded to an institution that has demonstrated exceptional performance in the past academic year in the eastern region."
+  },
+  {
+    awardHeading: "University of the Year (West)",
+    awardDescription: "Awarded to an institution that has demonstrated exceptional performance in the past academic year in the western region."
+  },
+  {
+    awardHeading: "International Collaboration of the Year",
+    awardDescription: "This award recognizes exceptional projects carried out jointly between an Indian institution and one or more international partners."
+  },
+  {
+    awardHeading: "Business School of the Year (National/Regional)",
+    awardDescription: "Awarded to the business school demonstrating the most outstanding performance in the past academic year at the national or regional level."
+  },
+  {
+    awardHeading: "Most Emerging Higher Education Institute of the Year",
+    awardDescription: "Awarded to emerging higher education institutions less than 5 years old in the Medical/Engineering/Management field."
+  },
+  {
+    awardHeading: "Outstanding ICT Initiative of the Year",
+    awardDescription: "This award recognizes and rewards an institutional ICT initiative that has demonstrated an innovative, strategic, and potentially far-reaching use of ICT in support of the goals of that institution."
+  },
+  {
+    awardHeading: "Most Entrepreneurial Institution of the Year",
+    awardDescription: "The Awards will recognize institutions that have embedded entrepreneurial activity into the fabric of their institution either through setting Incubation centers or tie-ups with the corporate sector for promoting entrepreneurship in higher education."
+  },
+  {
+    awardHeading: "Research Project of the Year",
+    awardDescription: "Awarded to the individual or team for innovative research that has a far-reaching impact on its field and has caught, or has the potential to catch, the imagination of the public. Open to individuals or teams in any discipline at an Indian institution. Nominations must be endorsed by the applicants' institution."
+  },
+  {
+    awardHeading: "Excellence in Distance learning education",
+    awardDescription: "This award is for overcoming geographical challenges without diluting the quality of education."
+  },
+  {
+    awardHeading: "Teaching Excellence Awards",
+    awardDescription: "Awarded to the individual for demonstrating the upgraded curriculum and teaching methodologies."
+  },
+  {
+    awardHeading: "Higher Education Publisher of the Year",
+    awardDescription: "The Award will recognize a leading publisher who has brought out the best content in Higher education."
+  },
+  {
+    awardHeading: "Best Private University",
+    awardDescription: "Award for the best academic delivery with desired infrastructure, best practices & working for the cause of Education."
+  },
+  {
+    awardHeading: "Best Infrastructure of the Year",
+    awardDescription: "Award given to the Best Infrastructure of the Year."
+  },
+  {
+    awardHeading: "Institute with the Best Placement",
+    awardDescription: "Award given to the institute with the Best Placement."
+  },
+  {
+    awardHeading: "Best Engineering College of the Year (Regional / National)",
+    awardDescription: "Award given to the Best Engineering College of the Year (Regional / National)."
+  },
+  {
+    awardHeading: "Best Medical College of the Year (Regional / National)",
+    awardDescription: "Award given to the Best Medical College of the Year (Regional / National)."
+  },
+  {
+    awardHeading: "Social Initiatives taken by Higher Education Institutions",
+    awardDescription: "Social Initiatives award to higher educational institutions and individuals who worked with the people of rural India in identifying development challenges and evolving appropriate solutions for accelerating sustainable growth."
+  },
+  {
+    awardHeading: "Student Mentorship Award",
+    awardDescription: "Faculties nominated for this award should show a sustained record of mentoring and advising research and creative endeavors of students with significant outcomes from those students."
+  }
+];%>
+                <div class="publication_container">
+                    <h1 class="publication_headline">Awards </h1>
+                    <div class="journal_container">
+                        <p style="line-height: 1.8rem; text-align: justify;              font-size: 1.2rem;">UI Leadership Awards honor the determined effort and achievements of changemakers who have made their performance and innovative excellence in their respective field. It is a very special and unique setup involving International Excellence awards in various categories. UI Leadership award creates worldwide recognition and reserves its space in Society for the winning profiles. As such, it also gives participants an ideal opportunity to make their work visible to a broader audience.<br />
+
+                        </p>
+                        <div style="width: 100%;">
+                            <h2 style="color: #005499;">Important Dates:</h2><hr />
+                            <table>
+                                <tr>
+                                    <td style="padding: 5px;font-size: 1.3rem;"><b>Last date for nomination:</b>  15th December, 2023</td>
+                                </tr> 
+                                <tr>
+                                    <td style="padding: 5px;font-size: 1.3rem;"><b>Announcement of Result:</b>  20th December, 2023</td>
+                                </tr>                                
+                            </table>
+                        </div>
+                        <div style="width: 100%;">
+                            <h2 style="color: #005499;">Award Categories:</h2><hr />
+                        </div>
+                        
+                        <div style="display: flex;flex-wrap: wrap;justify-content: space-around;width: 100%;">
+                            <%awardsArray.forEach((award)=>{%>
+                            <div class="award">
+                                <div class="award-heading"><%=award.awardHeading%></div><hr />
+                                
+                                <div class="award-desc"><%=award.awardDescription%></div>
+                                
+                                <!-- <div class="indexing">SCIE Indexed IF 1.19</div> -->
+                            </div>
+                            <%})%>
+                            
+
+                        </div>
+                        <div style="width: 100%;">
+                          <h2 style="color: #005499;">Higher Education Award Categories:</h2><hr />
+                      </div>
+                      
+                      <div style="display: flex;flex-wrap: wrap;justify-content: space-around;width: 100%;">
+                          <%awardsArray2.forEach((award)=>{%>
+                          <div class="award">
+                              <div class="award-heading"><%=award.awardHeading%></div><hr />
+                              
+                              <div class="award-desc"><%=award.awardDescription%></div>
+                              
+                              <!-- <div class="indexing">SCIE Indexed IF 1.19</div> -->
+                          </div>
+                          <%})%>
+                          
+
+                      </div>
+                        <div style="width: 100%;">
+                            <h2 style="color: #005499;">Submission:</h2><hr />
+                            <p style="line-height: 1.8rem; text-align: justify;              font-size: 1.2rem;">Please fill the attached form and send it along with complete CV to <a href="mailto:universalinovators@gmail.com" style="color: #005499;">universalinovators@gmail.com</a><br />
+                                If applying for best paper or thesis awards, then mail us filled form, CV, paper/thesis to <a href="mailto:universalinovators@gmail.com" style="color: #005499;">universalinovators@gmail.com</a>                     
+                            </p>
+                            <div style="width: 100%;">
+                              
+                              <table>
+                                  <tr>
+                                      <td style="padding: 5px;font-size: 1.3rem;color: #005499;"><a href="">Individual Award Form</a></td>
+                                  </tr> 
+                                  <tr>
+                                      <td style="padding: 5px;font-size: 1.3rem;color: #005499;"><a href="">Higher Education Award Form</a></td>
+                                  </tr>                                
+                              </table>
+                          </div>
+                        </div>
+                        <div style="width: 100%;">
+                            <h2 style="color: #005499;">Nomination and Evaluation:</h2><hr />
+                            
+                                <ul style="line-height: 1.8rem; text-align: justify;              font-size: 1.2rem;">
+                                    <li>Each applicant would be required to fill in a Self-Nomination form and send it to us by 31st January, 2023</li>
+                                        <li>Any organization/individual from education/allied sector can apply. Each applicant can apply for one or multiple categories.</li>
+                                        <li>The nominees in each category will be presented to the final jury for determination of winners.</li>
+                                        <li>Information received will be treated confidential and not used for any purpose except for determining the winner of the awards</li>
+                                        <li>Incomplete questionnaire in any manner will disqualify a participant from participating in the awards.</li>
+                                        <li>Right to permit participation is reserved with the Awards management.</li>
+                                </ul>
+                            
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <%- include("./Components/footer.ejs") %>
+                    <script src="/assets/scripts/operations.js"></script>
+                    <script>
+                        document.querySelector(".publication_container").style.cssText = "visibility: hidden; opacity: 0";
+                        document.addEventListener("DOMContentLoaded", () => { setTimeout(() => { document.querySelector(".publication_container").removeAttribute("style") }, 1000) })
+                    </script>
+</body>
+
+</html>

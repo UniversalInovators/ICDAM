@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("/assets/fonts/Raleway-Regular.ttf");
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-Regular.woff2");
+}
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/assets/fonts/SourceSansPro-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "SourceSansPro-Black";
+  src: url("/assets/fonts/SourceSansPro-Black.ttf");
+}
+body {
+  margin: 0;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e1e1e1;
+}
+
+.formHeading {
+  font-size: 4rem;
+  font-family: "Raleway-Regular";
+  margin: 2rem 0;
+}
+
+.steerform {
+  display: flex;
+  flex-direction: column;
+}
+.steerform input {
+  width: 500px;
+  font-size: 1.2rem;
+  font-family: "Inter";
+  border: 1px solid #e1e1e1;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  outline: none;
+  border-radius: 8px;
+}
+.steerform button {
+  padding: 1rem;
+  font-size: 1.5rem;
+  background-color: #3399ff50;
+  color: #000;
+  width: max-content;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  border-radius: 8px;
+  width: 540px;
+  border: 2px solid #fff;
+  text-transform: capitalize;
+}
+.steerform button:hover {
+  transform: scale(1.05);
+  border: 2px solid #39f;
+  background-color: #3399ff30;
+}
+
+.comlist_item {
+  font-family: "Inter";
+  background-color: #fff;
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.comlist_item .comitem_info div {
+  max-width: 800px;
+}
+.comlist_item .comitem_info div:nth-child(1) {
+  color: red;
+}
+.comlist_item .comitem_info div:nth-child(2) {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.mdc-data-table h1 {
+  font-family: "SourceSansPro";
+}
+
+/*# sourceMappingURL=sterrcomm.css.map */

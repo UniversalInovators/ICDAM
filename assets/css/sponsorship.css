@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("/assets/fonts/Raleway-Regular.ttf");
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-Regular.woff2");
+}
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/assets/fonts/SourceSansPro-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "SourceSansPro-Black";
+  src: url("/assets/fonts/SourceSansPro-Black.ttf");
+}
+.sponsorship_container {
+  min-height: 80vh;
+  width: 90%;
+  margin: 0 auto;
+  padding: 8rem 0 0 0;
+  box-sizing: border-box;
+}
+.sponsorship_container .page_headline {
+  width: 100%;
+  border-bottom: 3px solid #cccccc;
+  padding-bottom: 1rem;
+  box-sizing: border-box;
+  color: #005499;
+}
+@media (max-width: 767px) {
+  .sponsorship_container .page_headline {
+    padding-left: 1rem;
+  }
+}
+.sponsorship_container .invi_letter_container {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 5rem;
+  padding: 1.5rem 2rem;
+  box-sizing: border-box;
+}
+.sponsorship_container .invi_letter_container h5 {
+  font-size: 1.5rem;
+}
+.sponsorship_container .invi_letter_container h5:last-child, .sponsorship_container .invi_letter_container h5:nth-last-child(2) {
+  margin: 5px;
+}
+@media (max-width: 767px) {
+  .sponsorship_container .invi_letter_container h5 {
+    margin: 1.2rem 0;
+  }
+}
+.sponsorship_container .invi_letter_container .invi-body {
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+@media (max-width: 767px) {
+  .sponsorship_container .invi_letter_container .invi-body {
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.4rem;
+  }
+}
+@media (max-width: 767px) and (min-width: 576px) {
+  .sponsorship_container .invi_letter_container .invi-body {
+    font-size: 16px;
+  }
+}
+.sponsorship_container .invi_letter_container .highlights_container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.sponsorship_container .invi_letter_container .highlights_container .highlight {
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+  color: #005499;
+  background-color: #00549940;
+  border-radius: 10px;
+  margin: 0.1rem 0;
+  box-sizing: border-box;
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 2rem;
+  box-shadow: 0 0 1px 1px #00000029;
+  transition: 0.3s ease;
+  z-index: 3;
+}
+.sponsorship_container .invi_letter_container .highlights_container .highlight:hover {
+  z-index: 4;
+  background-color: #000;
+  color: #fff;
+  width: 90%;
+  transform: scale(1.1) translateX(4rem);
+}
+@media (max-width: 767px) {
+  .sponsorship_container .invi_letter_container .highlights_container {
+    width: 100%;
+  }
+  .sponsorship_container .invi_letter_container .highlights_container .highlight {
+    font-size: 14px;
+    padding: 0.5rem 1rem;
+    line-height: normal;
+  }
+  .sponsorship_container .invi_letter_container .highlights_container .highlight:hover {
+    z-index: unset;
+    width: 100%;
+    transform: scale(1) translateX(0);
+  }
+}
+@media (max-width: 767px) {
+  .sponsorship_container {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=sponsorship.css.map */

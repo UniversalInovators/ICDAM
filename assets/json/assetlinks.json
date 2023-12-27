@@ -1,0 +1,14 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.desiadda.desiadda",
+            "sha256_cert_fingerprints": [
+                "2F:21:FA:B6:41:95:ED:13:2C:61:AE:A6:6F:F6:9E:EF:62:17:53:78:EE:1D:AE:6C:5B:31:6E:E5:07:17:85:A4"
+            ]
+        }
+    }
+]

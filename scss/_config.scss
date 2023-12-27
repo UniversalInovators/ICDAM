@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("/assets/fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-Regular.woff2");
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/assets/fonts/SourceSansPro-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "SourceSansPro-Black";
+  src: url("/assets/fonts/SourceSansPro-Black.ttf");
+}
+
+@import "_include-media";
+
+// Media Queries
+// -----------------------------------------
+
+$screen-xl: "only screen and (max-width: 1500px)";
+$screen-lg: "only screen and (max-width: 1199px)";
+$screen-md: "only screen and (max-width: 991px)";
+$screen-sm: "only screen and (max-width: 767px)";
+$screen-xs: "only screen and (max-width: 575px)";
+$screen-landscape: "only screen and (orientation: landscape)";
+
+$breakpoints: (
+  xxl: 1900px,
+  xl: 1500px,
+  lg: 1199px,
+  md: 991px,
+  sm: 767px,
+  xs: 575px,
+  landscape: "landscape",
+);

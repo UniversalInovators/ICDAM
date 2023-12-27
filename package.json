@@ -1,0 +1,33 @@
+{
+  "name": "icdam_2.0",
+  "version": "2.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "sass --watch scss:assets/css",
+    "dev": "concurrently \"nodemon server.js\" \"npm run watch\""
+  },
+  "author": "Varun",
+  "license": "MIT",
+  "repository": "https://github.com/VarunDev7777/ICDAM-node.git",
+  "description": "Conference ICDAM",
+  "dependencies": {
+    "concurrently": "^7.0.0",
+    "connect-mongo": "^3.2.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mongoose": "^5.11.0",
+    "sass": "^1.33.0",
+    "stripe": "^8.217.0"
+  },
+  "keywords": [
+    "heroku",
+    "icdam2"
+  ],
+  "engines": {
+    "node": "v16.14.0"
+  }
+}

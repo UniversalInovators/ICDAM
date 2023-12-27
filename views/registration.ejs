@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <title>ICDAM | International Conference on Data Analytics and Management</title>
+    <link rel="stylesheet" href="/assets/css/registration.css">
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/sidebar.css">
+    <link rel="icon" href="/assets/images/gurunanak.png">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <style>
+        .btn {
+                -webkit-border-radius: 8;
+                -moz-border-radius: 8;
+                border-radius: 8px;
+                font-family: Georgia;
+                color: #ffffff;
+                font-size: 20px;
+                background: #005499;
+                padding: 10px 20px 10px 20px;
+                text-decoration: none;
+                display: block;
+                margin: 10px auto;
+            }
+
+        .btn:hover {
+          background: #3cb0fd;
+          background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+          background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+          background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+          background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+          background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+          text-decoration: none;
+        }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X5ZTVY0WMV"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
+    <script src="https://js.stripe.com/v3" async></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-X5ZTVY0WMV');
+    </script>
+
+</head>
+
+<body>
+    <%- include("./Components/loader.ejs") %>
+        <%- include("./Components/header.ejs") %>
+            <%- include("./Components/sidebar.ejs") %>
+                <div class="registration_container">
+                    <div class="registration_details">
+                        <div class="registration_info">
+                            <h3 class="Note">Author/Co-Author Registration Fee Includes: Participation in the technical
+                                program , Participation certificate to the presenter and Pre-Proceeding e-copy
+                            </h3>
+                            <p>
+                                Once Your paper is accepted, the registration process begins. you have to complete the
+                                following steps.
+                                Step1 - Registration Fee: It is mandatory for at least one author of an accepted paper
+                                to register in order for the paper to appear in the proceedings and included in the
+                                Technical Program. If an author has got more than one accepted papers, there will be
+                                discount on additional papers registration. Fee includes listing the papers online in
+                                International Journal, The CD media of the proceedings and publication in various issues
+                                of Journals, Lunch, Morning and Evening Snacks. Registration Fees.
+                            </p>
+                            <h3>Author/Co-Author Registration Fee Includes:</h3>
+                            <ul class="author_reg_fees">
+                                <!-- <li>Virtual Presentation</li>
+                                            <li>Participation in the technical program</li>
+                                            <li>Participation certificate to the presenters</li>
+                                            <li>Pre-Proceeding e-copy</li> -->
+                                <li>Access to Keynote talks</li>
+                                <li>Access to paper presentation sessions</li>
+                                <li>Networking sessions</li>
+                                <li>Conference lunch and refreshment*</li>
+                                <li>Tea and Coffee Breaks*</li>
+                                <li>Conference kit*</li>
+                                <li>Participation Certificate</li>
+                            </ul>
+
+                            <h4 class="Note">
+                                Note: The conference is non-residential and delegates are kindly requested to make their
+                                own arrangement for accommodation. If you have any query, please drop a mail to . All
+                                participants and authors abide by <b>
+
+                                    Terms & Condition
+                                </b>
+                                the as per the organizations guidelines.
+                            </h4>
+                            <!-- <h2>Registration Account Details</h2>
+                                    <div class="bank_details_icdam">
+                                        <h3>Pay via Bank Transfer</h3>
+                                        <div class="detail_table">
+                                            <ul class="bank_detaillist">
+                                                <li>
+                                                    <div class="detail_name">ACCOUNT NAME</div>
+                                                    <div class="details_val">ICICC</div>
+                                                </li>
+                                                <li>
+                                                    <div class="detail_name">ACCOUNT NUMBER</div>
+                                                    <div class="details_val">510909010080523</div>
+                                                </li>
+                                                <li>
+                                                    <div class="detail_name">BANK</div>
+                                                    <div class="details_val">City Union Bank</div>
+                                                </li>
+                                                <li>
+                                                    <div class="detail_name">BRANCH</div>
+                                                    <div class="details_val">Sector-8, Rohini, Delhi</div>
+                                                </li>
+                                                <li>
+                                                    <div class="detail_name">Branch CODE</div>
+                                                    <div class="details_val">244</div>
+                                                </li>
+                                                <li>
+                                                    <div class="detail_name">IFSC CODE</div>
+                                                    <div class="details_val">CIUB0000244</div>
+                                                </li>
+                                                <li>
+                                                    <div class="detail_name">MICR</div>
+                                                    <div class="details_val">600054027</div>
+                                                </li>
+                                                <li>
+                                                    <div class="detail_name">SWIFT CODE</div>
+                                                    <div class="details_val">CIUBIN5M</div>
+                                                </li>
+                                                <li>
+                                                    <div class="detail_name">ACCOUNT TYPE</div>
+                                                    <div class="details_val">CURRENT</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div> -->
+
+                            <h1 class="head_center">Registration Fee For ICDAM-2024</h1>
+                            <div class="fee_structure">
+                                <button class="btn"><a href="https://www.paypal.com/paypalme/ICICCConference?locale.x=en_GB" target="_blank">Pay via Paypal</a></button>
+                                <div class="fee_struc_table">
+                                    <ul class="desktop-view">
+                                        <li>
+                                            <div class="fee_category table_heading">Category</div>
+                                            <div class="fee_category">Research Scholar/Student
+                                                <div class="registeration_fee">
+                                                    Register</div>
+                                            </div>
+                                            <div class="fee_category">Academician
+                                                <div class="registeration_fee">
+                                                    Register</div>
+                                            </div>
+                                            <div class="fee_category">Industrial Participant
+                                                <div class="registeration_fee">
+                                                    Register</div>
+                                            </div>
+                                            <div class="fee_category">For Online Mode (40%  Discount)
+                                                <div class="registeration_fee">
+                                                    Register</div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="early_reg_fee table_heading">Early Registration (Fees till 30th
+                                                April 2024)</div>
+                                            <div class="early_reg_fee">USD 300</div>
+                                            <div class="early_reg_fee">USD 350</div>
+                                            <div class="early_reg_fee">USD 400</div>
+                                        </li>
+                                        <li>
+                                            <div class="late_reg_fee table_heading">Late Registration (Fees After 30th April 2024)</div>
+                                            <div class="late_reg_fee">USD 350</div>
+                                            <div class="late_reg_fee">USD 400</div>
+                                            <div class="late_reg_fee">USD 450</div>
+                                        </li>
+
+
+                                    </ul>
+                                    <ul class="mobile-view">
+                                        <li>
+                                            <div class="fee_category">Category</div>
+                                            <div class="early_reg_fee table_heading">Early Registration (Fees till <br />30th April 2024)
+                                            </div>
+                                            <div class="late_reg_fee table_heading">Late Registration (Fees after <br />30th April 2024)
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fee_category">Research Scholar/Student</div>
+                                            <div class="register_fee registeration_fee">
+                                                Register</div>
+                                            <div class="early_reg_fee">USD 300</div>
+                                            <div class="late_reg_fee">USD 350</div>
+                                        </li>
+                                        <li>
+                                            <div class="fee_category">Academician</div>
+                                            <div class="register_fee registeration_fee">
+                                                Register</div>
+                                            <div class="early_reg_fee">USD 350</div>
+                                            <div class="late_reg_fee">USD 400</div>
+                                        </li>
+                                        <li>
+                                            <div class="fee_category">Industrial Participant</div>
+                                            <div class="register_fee registeration_fee">
+                                                Register</div>
+                                            <div class="early_reg_fee">USD 400</div>
+                                            <div class="late_reg_fee">USD 450</div>
+                                        </li>
+
+                                        <li>
+                                            <div class="fee_category">For Online Mode (40%  Discount)</div>
+                                            <div class="register_fee registeration_fee">
+                                                Register</div>
+                                        </li>
+                                        <!-- <li>
+                                                                            <div class="fee_category">Research Scholar/Student from INDIA</div>
+                                                                            <div class="early_reg_fee">INR 7,000</div>
+                                                                            <div class="late_reg_fee">INR 8,000</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="fee_category">Academician from INDIA</div>
+                                                                            <div class="early_reg_fee">INR 8,000</div>
+                                                                            <div class="late_reg_fee">INR 9,000</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="fee_category">Industrial Participants from INDIA</div>
+                                                                            <div class="early_reg_fee">INR 9,000</div>
+                                                                            <div class="late_reg_fee">INR 10,000</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="fee_category">Research Scholar/Student from EUROPE</div>
+                                                                            <div class="early_reg_fee">USD 150</div>
+                                                                            <div class="late_reg_fee">USD 200</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="fee_category">Academician from EUROPE</div>
+                                                                            <div class="early_reg_fee">USD 200</div>
+                                                                            <div class="late_reg_fee">USD 250</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="fee_category">Industrial Participant from EUROPE</div>
+                                                                            <div class="early_reg_fee">USD 250</div>
+                                                                            <div class="late_reg_fee">USD 300</div>
+                                                                        </li> -->
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h3 class="head_center">SAARC nations</h3>
+                            <div class="fee_structure">
+                                <div class="fee_struc_table">
+                                    <ul class="desktop-view">
+                                        <li>
+                                            <div class="fee_category table_heading" >Category</div>
+                                            <div class="fee_category">Research Scholar/Student
+                                                <div class="registeration_fee">
+                                                    Register</div>
+                                            </div>
+                                            <div class="fee_category">Academician
+                                                <div class="registeration_fee">
+                                                    Register</div>
+                                            </div>
+                                            <div class="fee_category">Industrial Participant
+                                                <div class="registeration_fee">
+                                                    Register</div>
+                                            </div>
+                                            <div class="fee_category">For Online Mode (40%  Discount)
+                                                <div class="registeration_fee">
+                                                    Register</div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="early_reg_fee table_heading">Early Registration (Fees till 30th April 2024)</div>
+                                            <div class="early_reg_fee">USD 250</div>
+                                            <div class="early_reg_fee">USD 300</div>
+                                            <div class="early_reg_fee">USD 350</div>
+                                        </li>
+                                        <li>
+                                            <div class="late_reg_fee table_heading">Late Registration (Fees After 
+                                                30th April 2024)</div>
+                                            <div class="late_reg_fee">USD 300</div>
+                                            <div class="late_reg_fee">USD 350</div>
+                                            <div class="late_reg_fee">USD 400</div>
+                                        </li>
+
+
+                                    </ul>
+                                    <ul class="mobile-view">
+                                        <li>
+                                            <div class="fee_category">Category</div>
+                                            <div class="early_reg_fee table_heading">Early Registration (Fees till <br />30th April 2024)
+                                            </div>
+                                            <div class="late_reg_fee table_heading">Late Registration (Fees after <br />30th April 2024)
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fee_category">Research Scholar/Student</div>
+                                            <div class="register_fee registeration_fee">
+                                                Register</div>
+                                            <div class="early_reg_fee">USD 250</div>
+                                            <div class="late_reg_fee">USD 300</div>
+                                        </li>
+                                        <li>
+                                            <div class="fee_category">Academician</div>
+                                            <div class="register_fee registeration_fee">
+                                                Register</div>
+                                            <div class="early_reg_fee">USD 300</div>
+                                            <div class="late_reg_fee">USD 350</div>
+                                        </li>
+                                        <li>
+                                            <div class="fee_category">Industrial Participant</div>
+                                            <div class="register_fee registeration_fee">
+                                                Register</div>
+                                            <div class="early_reg_fee">USD 350</div>
+                                            <div class="late_reg_fee">USD 400</div>
+                                        </li>
+
+                                        <li>
+                                            <div class="fee_category">For Online Mode (40%  Discount)</div>
+                                            <div class="register_fee registeration_fee">
+                                                Register</div>
+                                        </li>
+                                        <!-- <li>
+                                                                            <div class="fee_category">Research Scholar/Student from INDIA</div>
+                                                                            <div class="early_reg_fee">INR 7,000</div>
+                                                                            <div class="late_reg_fee">INR 8,000</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="fee_category">Academician from INDIA</div>
+                                                                            <div class="early_reg_fee">INR 8,000</div>
+                                                                            <div class="late_reg_fee">INR 9,000</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="fee_category">Industrial Participants from INDIA</div>
+                                                                            <div class="early_reg_fee">INR 9,000</div>
+                                                                            <div class="late_reg_fee">INR 10,000</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="fee_category">Research Scholar/Student from EUROPE</div>
+                                                                            <div class="early_reg_fee">USD 150</div>
+                                                                            <div class="late_reg_fee">USD 200</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="fee_category">Academician from EUROPE</div>
+                                                                            <div class="early_reg_fee">USD 200</div>
+                                                                            <div class="late_reg_fee">USD 250</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="fee_category">Industrial Participant from EUROPE</div>
+                                                                            <div class="early_reg_fee">USD 250</div>
+                                                                            <div class="late_reg_fee">USD 300</div>
+                                                                        </li> -->
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                            <h1 class="head_center">CONFERENCE PARTICIPANT REGISTRATION</h1>
+                            <div class="fee_structure">
+                                <div class="fee_struc_table">
+                                    <ul class="desktop-view">
+                                        <li>
+                                            <div class="fee_category table_heading">Category</div>
+                                            <!-- <div class="fee_category">Research Scholar/Student
+                                                <div class="registeration_fee">
+                                                    Register</div>
+                                            </div> -->
+                                            <div class="fee_category">Research Student Participants
+                                            </div>
+                                            <div class="fee_category">Standard Participants
+                                            </div>
+                                            <!-- <div class="fee_category">Other
+                                                <div class="registeration_fee">
+                                                    Register</div>
+                                            </div> -->
+                                        </li>
+                                        <li>
+                                            <div class="early_reg_fee table_heading">Early Registration (Fees till 30th April 2024)</div>
+                                            <div class="early_reg_fee">USD 150</div>
+                                            <div class="early_reg_fee">USD 200</div>
+                                            <!-- <div class="early_reg_fee">USD 400</div> -->
+                                        </li>
+                                        <li>
+                                            <div class="late_reg_fee table_heading">Late Registration (Fees After 
+                                                30th April 2024)</div>
+                                            <div class="late_reg_fee">USD 200</div>
+                                            <div class="late_reg_fee">USD 250</div>
+                                            <!-- <div class="late_reg_fee">USD 450</div> -->
+                                        </li>
+
+
+                                    </ul>
+                                    <ul class="mobile-view">
+                                        <li>
+                                            <div class="fee_category">Category</div>
+                                            <div class="early_reg_fee table_heading">Early Registration (Fees till <br />30th April 2024)
+                                            </div>
+                                            <div class="late_reg_fee table_heading">Late Registration (Fees after <br />30th April 2024)
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fee_category">Research Student Participants</div>
+                                            <!-- <div class="register_fee registeration_fee">
+                                                Register</div> -->
+                                            <div class="early_reg_fee">USD 150</div>
+                                            <div class="late_reg_fee">USD 200</div>
+                                        </li>
+                                        <li>
+                                            <div class="fee_category">Standard Participants</div>
+                                            <!-- <div class="register_fee registeration_fee">
+                                                Register</div> -->
+                                            <div class="early_reg_fee">USD 200</div>
+                                            <div class="late_reg_fee">USD 250</div>
+                                        </li>
+                                        <!-- <li>
+                                            <div class="fee_category">Industrial Participant</div>
+                                            <div class="register_fee registeration_fee">
+                                                Register</div>
+                                            <div class="early_reg_fee">USD 400</div>
+                                            <div class="late_reg_fee">USD 450</div>
+                                        </li>
+
+                                        <li>
+                                            <div class="fee_category">Other</div>
+                                            <div class="register_fee registeration_fee">
+                                                Register</div>
+                                        </li> -->
+                                        <!-- <li>
+                                                                            <div class="fee_category">Research Scholar/Student from INDIA</div>
+                                                                            <div class="early_reg_fee">INR 7,000</div>
+                                                                            <div class="late_reg_fee">INR 8,000</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="fee_category">Academician from INDIA</div>
+                                                                            <div class="early_reg_fee">INR 8,000</div>
+                                                                            <div class="late_reg_fee">INR 9,000</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="fee_category">Industrial Participants from INDIA</div>
+                                                                            <div class="early_reg_fee">INR 9,000</div>
+                                                                            <div class="late_reg_fee">INR 10,000</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="fee_category">Research Scholar/Student from EUROPE</div>
+                                                                            <div class="early_reg_fee">USD 150</div>
+                                                                            <div class="late_reg_fee">USD 200</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="fee_category">Academician from EUROPE</div>
+                                                                            <div class="early_reg_fee">USD 200</div>
+                                                                            <div class="late_reg_fee">USD 250</div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="fee_category">Industrial Participant from EUROPE</div>
+                                                                            <div class="early_reg_fee">USD 250</div>
+                                                                            <div class="late_reg_fee">USD 300</div>
+                                                                        </li> -->
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- <h2 class="ml6">
+                                        <span class="text-wrapper">
+                                            <span class="letters">For Online Mode (40%  Discount) of 10% for Universal Inovator (UI)
+                                                Member</span>
+                                        </span>
+                                    </h2> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="backdrop hidden">
+                    <div class="otherPaymentDialouge">
+                        <div class="modalData">
+                            <!-- <h2>Special Membership</h2> -->
+                            <span></span>
+                            <span>
+                                <strong>Note:
+                                </strong>
+                                Submit 40 % money in INR of your registration fees <br />for online presentation</span>
+                            <input type="number" id="spmem" />
+                            <button class="submitspmem">Submit</button>
+                        </div>
+                    </div>
+                </div>
+                <%- include("./Components/footer.ejs") %>
+                    <script src="/assets/scripts/movingletters.js"></script>
+                    <script src="/assets/scripts/operations.js"></script>
+                    <script src="/assets/scripts/payment.js"></script>
+</body>
+
+</html>

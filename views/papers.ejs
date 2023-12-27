@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <title>ICDAM | International Conference on Data Analytics and Management</title>
+    <link rel="stylesheet" href="/assets/css/papers.css">
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/sidebar.css">
+    <link rel="icon" href="/assets/images/gurunanak.png">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X5ZTVY0WMV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-X5ZTVY0WMV');
+    </script>
+    <style>
+        p{
+            text-align: justify;
+            text-justify: inter-word;
+        }
+    </style>
+</head>
+
+<body>
+    <%- include("./Components/loader.ejs") %>
+    <%- include("./Components/header.ejs") %>
+    <%- include("./Components/sidebar.ejs") %>
+
+    <div class="papers_component">
+        <div class="paper_page_options">
+            <div class="poption pactive" id="callp">Call For Papers</div>
+            <div class="poption">Paper Submission</div>
+            <div class="poption">Call for Special Session</div>
+            <div class="poption">Call for International Workshops</div>
+        </div>
+
+        <!-- Call for Papers -->
+        <div class="call_for_papers_container paper_data">
+            <h1 class="paper_headline">Call For Papers</h1>
+            <div class="call_info">
+                <p >The scope of this conference is to provide a platform for researchers, engineers,
+                    academicians as well as industrial professionals from all over the world to present
+                    their research results and development activities in various topics of Engineering and
+                    Technology. It allows participants an opportunity to discuss the recent developments in
+                    the field of solidification computer science and management and review challenges faced
+                    by the community in the 21st century. The conference consists of invited</p>
+            </div>
+            <h4 class="plist_heading">ICDAM-2024 will be an amalgamation of five different Tracks organized parallel to each other, as listed below:</h4>
+            <div class="track_list">
+                <div class="tlist_item">
+                    <div class="list_heading">Track 1: Data Analytics</div>
+                    <ul>
+                        <% for( let i=0; i<cfpList.length; i++ ){ %>
+                        <% if(cfpList[i].callforpaper_id==1) { %>
+                        <li><img src="/assets/images/svgs/arrow-forward-outline.svg" alt="marker" />
+                            <%= cfpList[i].content %>
+                        </li>
+                        <% } } %>
+                    </ul>
+                </div>
+                <div class="tlist_item">
+                    <div class="list_heading">Track 2: Data Management</div>
+                    <ul>
+                        <% for( let i=0; i<cfpList.length; i++ ){ %>
+                        <% if(cfpList[i].callforpaper_id==2) { %>
+                        <li><img src="/assets/images/svgs/arrow-forward-outline.svg" alt="marker" />
+                            <%= cfpList[i].content %>
+                        </li>
+                        <% } } %>
+                    </ul>
+                </div>
+                <div class="tlist_item">
+                    <div class="list_heading">Track 3: Big Data</div>
+                    <ul>
+                        <% for( let i=0; i<cfpList.length; i++ ){ %>
+                        <% if(cfpList[i].callforpaper_id==3) { %>
+                        <li><img src="/assets/images/svgs/arrow-forward-outline.svg" alt="marker" />
+                            <%= cfpList[i].content %>
+                        </li>
+                        <% } } %>
+                    </ul>
+                </div>
+                <div class="tlist_item">
+                    <div class="list_heading">Track 4: Computational Intelligence</div>
+                    <ul>
+                        <% for( let i=0; i<cfpList.length; i++ ){ %>
+                        <% if(cfpList[i].callforpaper_id==4) { %>
+                        <li><img src="/assets/images/svgs/arrow-forward-outline.svg" alt="marker" />
+                            <%= cfpList[i].content %>
+                        </li>
+                        <% } } %>
+                    </ul>
+                </div>
+                <div class="tlist_item">
+                    <div class="list_heading">Track 5: Communication Networks</div>
+                    <ul>
+                        <% for( let i=0; i<cfpList.length; i++ ){ %>
+                        <% if(cfpList[i].callforpaper_id==5) { %>
+                        <li><img src="/assets/images/svgs/arrow-forward-outline.svg" alt="marker" />
+                            <%= cfpList[i].content %>
+                        </li>
+                        <% } } %>
+                    </ul>
+
+                    <h3 class="Note-cfp">The papers submitted to the conference will be peer reviewed and
+                        published as proceedings in Springer(Approved)</h3>
+                    <p class="add_cfp">All papers will undergo a blind peer review process and all accepted
+                        papers will be published in the SHORT NAME conference e-proceedings with an e-ISBN
+                        number. The conference organizer encourages submissions of academic and research
+                        papers that consider the multidisciplinary/interdisciplinary themes covering the
+                        Management, Science and Social Studies, through one of the following sub-themes,
+                        although submissions of other topics for consideration are also welcome.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Paper Submission Container -->
+        <div class="paper_submission_container paper_data data-inactive">
+            <h1 class="paper_headline">Paper Submission</h1>
+            <div class="submission_container">
+                <p class="sub_note">The Original unpublished Research Papers, Articles & Working papers
+                    having maximum length 8 pages on the topics related to the theme are invited for
+                    presentation/publication in the conference proceedings. </p>
+                <ul>
+                    <li>Kindly ensure that your paper is formatted as per <a href="/assets/downloads/Manuscript guidelines for English books.pdf"><strong style="color: green;">Springer
+                                Guidelines</strong></a> (not exceeding 8 pages written in A4 size). Please
+                        refer the attached springer template for preparation of your paper.</li>
+                    <li>All papers must be submitted online via <a href="https://cmt3.research.microsoft.com/ICDAM2024/Submission/Manage"><strong style="color: green;">Microsoft CMT Submission Portal</strong></a></li>
+                    <li>All submissions will be thoroughly peer-reviewed by experts based on originality,
+                        significance and clarity.</li>
+                    <li>Only papers presenting original content with novel research results or successful
+                        innovative applications will be considered for publication in the conference
+                        proceedings (as chapters in edited volumes of Springer Series).</li>
+                </ul>
+                <div class="policy_note">
+                    <h2>Plagiarism Policy</h2>
+                    <ul>
+                        <li>The paper prior to submission should be checked for plagiarism from licensed
+                            plagiarism softwares like Turnitin/iAuthenticate etc. The similarity content
+                            should not exceed 20% (in any case either self contents or others). Further, you
+                            have to strictly implement the following ethical guidelines for publication:
+                        </li>
+                        <li>Any form of self-plagiarism or plagiarism from others' work(s) should not be
+                            there in an article.
+                            If any model / concept / figure / table / data / conclusive comment by any
+                            previously published work is used in your article, you should properly cite a
+                            reference to the original work.</li>
+                        <li>Also language of explaining it should not be same as language of the work from
+                            which you have adopted it.
+                            If you are using any copyrighted material, you should acquire prior permission
+                            from the copyright holder. </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Special Session Invitation -->
+        <div class="call_for_spsession_container paper_data data-inactive">
+            <h1 class="paper_headline">Call For Special Session</h1>
+            <div class="call_sp_info">
+                <p class="txt_decor">Invitation to conduct special session in ICDAM-2024</p>
+                <br />
+                <span><strong>Dear Sir/Mam</strong></span> <br />
+                <p class="greeting">Greeting from ICDAM-2024!</p>
+                <p class="invi_body">
+                    ICDAM Conference team invites you to organize the special session in the International
+                    Conference on Data Analytics and Management (ICDAM-2024), to be held at The WSG University, Bydgoszcz Poland Europe on 16th - 17th June 2024 of your research domain. We are diligently working to bring some of the most
+                    knowledgeable researchers from all over the world along with the leaders from the
+                    industry to explore the important topics of research. The three day conference will
+                    include workshop, technical sessions and keynotes on cutting edge technologies related
+                    to our industry.
+                    The URL for the conference: icdam-conf.com
+                    Kindly increase the value of the conference by being part of this conference as a
+                    session chair and heading your own session in this esteemed conference. We are aware
+                    about your networking skills and of having an eye to identify quality research papers.
+                </p>
+                <h3>Highlights of the conference and Special Session Benefits:</h3>
+                <ul>
+                    <li>Proceedings in the reputed Scopus indexed Springer series (Approved).</li>
+                    <li>You will get 15% of the total fees collected in your session.</li>
+                    <li>The minimum number of registrations should be 8.</li>
+                    <li>Extended papers in SCI/Scopus/ESCI/DBLP/ACM Digital Library journals. We have
+                        already got approval from some Scopus and high quality journals. (Soon will be
+                        declared)</li>
+                    <li>Opportunity to be Session chair at the conference.</li>
+                    <li>Extra weightage and support will be provided for your session extended paper in SCI/
+                        Scopus Journal.</li>
+                    <li>Many international and national key note speakers will be delivering their lectures
+                        on latest innovative technologies in the conference.</li>
+                    <li>Easy accessibility of the well-connected conference venue.</li>
+                </ul>
+                <p>If you are interested to conduct a special session, kindly mail us the special session
+                    proposal at icdam.conf@gmail.com latest by 28th Feb, 2024 as per the format attached
+                    with this mail.</p>
+                <h4>All the accepted papers (after double blinded peer review) will be published in a
+                    Springer series (Approved) and further extended accepted papers will be published in the
+                    special issues of SCI/SCOPUS/WoS/DBLP/ACM/EI indexed Journals.</h4>
+                <p>Looking to see you in ICDAM-2024.</p>
+                <p>Sincerely,</p>
+                <p>Organizer and Convener</p>
+                <h4>ICDAM-2024</h4>
+
+                <div class="download_sp_session_template">
+                    <span>Special Session CFP Template</span>
+                    <button class="download_button"><a href="../assets/downloads/Special session CFP Template.docx">Download</a></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call For International Workshop -->
+        <div class="call_for_spsession_container paper_data data-inactive">
+            <h1 class="paper_headline">Call For International Workshop</h1>
+            <div class="call_sp_info">
+                <p class="txt_decor">Invitation to conduct International Workshop in ICDAM-2024</p>
+                <br />
+                <span><strong>Dear Sir/Mam</strong></span> <br />
+                <p class="greeting">Greeting from ICDAM-2024!</p>
+                <p class="invi_body">
+                    ICDAM Conference team invites you to organize the International Workshop in the fifth version of International Conference on Data Analytics & Management (ICDAM-2024), organized By: The WSG University, Bydgoszcz Poland
+                    in association with
+                    London Metropolitan University, London, UK , & Portalegre Polytechnic University, Portugal, Europe on 
+                    15th - 16th June, 2024. We are diligently working to bring some of the most knowledgeable academician from all over the world and business leaders to discuss critical research topics. The two-day conference will include a workshop, technical workshops and keynotes on our industry's cutting-edge technologies.<br><br>By being part of this conference as a session chair and leading your own session at this esteemed conference, please increase the importance of the conference. We understand your networking skills and have an eye on identifying quality research papers.
+                </p>
+
+                <h3>Highlights of the International Workshops and Benefits:</h3>
+                <ul>
+                    <li>All accepted papers will be published in the proceedings of ICDAM-2024 by Springer (Approved).
+                         <!-- Lecture Notes on Networks & Systems (SCOPUS Indexed -->
+                        </li>
+                    <li>The workshop organizers will be entitled to receive a renumeration of 20% of the total fees collected in the workshop.</li>
+                    <li>The minimum number of registrations should be 8 in the Approved workshop.</li>
+                    <li>High quality publishing houses are part of this conference like Springer, Elsevier, Inderscience, IEEE, Benthm Science, IGI Global and many more.</li>
+                    <li>Special discount for your personal paper if above conditions are met. (If minimum number of papers get registered in your session)</li>
+                    <li>Extra weightage and support will be provided for your session extended paper in SCI/Scopus Journal.</li>
+                    <li>Many international and national key note speakers will be delivering their lectures on latest innovative technologies in the conference.</li>
+                    <li>Easy accessibility of the well-connected conference venue.</li>
+                </ul>
+
+                <p>If you are interested to conduct an International Workshop, please email us the workshop proposal at icdam.conf@gmail.com with subject line as <strong>“Proposal for ICDAM 2024 International Workshop”</strong> latest by 28th Febuary 2024 as per the format attach with this email.</p>
+                <!--
+                            <h4>All the accepted papers (after double blinded peer review) will be published in a
+                                Springer series (Approved) and further extended accepted papers will be published in the
+                                special issues of SCI/SCOPUS/WoS/DBLP/ACM/EI indexed Journals.</h4>
+-->
+                <p>Looking to see you in ICDAM-2024.</p>
+                <p>Sincerely,</p>
+                <p>Organizer and Convener</p>
+                <h4>ICDAM-2024</h4>
+
+                <div class="download_sp_session_template worksop_template">
+                    <span>Workshop Proposal Template</span>
+                    <button class="download_button"><a href="/assets/downloads/Workshop_Proposal_Template.docx">Download</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include("./Components/footer.ejs") %>
+    <script src="/assets/scripts/operations.js"></script>
+</body>
+
+</html>

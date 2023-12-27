@@ -1,0 +1,232 @@
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("/assets/fonts/Raleway-Regular.ttf");
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-Regular.woff2");
+}
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/assets/fonts/SourceSansPro-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "SourceSansPro-Black";
+  src: url("/assets/fonts/SourceSansPro-Black.ttf");
+}
+.main_footer {
+  background-color: #ffffff;
+}
+.main_footer .sub_footer {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flexer {
+  display: flex;
+  border-bottom: 1px solid #d4d4d4;
+  padding-bottom: 1rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .flexer {
+    flex-direction: column;
+    padding-bottom: 0;
+    align-items: center;
+  }
+}
+
+.d_flexer {
+  display: flex;
+  align-items: flex-start;
+}
+@media (max-width: 767px) {
+  .d_flexer {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+}
+
+.footer_logo {
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer_logo img {
+  width: 30%;
+  margin-top: 1rem;
+}
+.footer_logo img:nth-child(2) {
+  width: 20%;
+  margin-top: 1rem;
+}
+@media (max-width: 767px) {
+  .footer_logo {
+    width: 100%;
+  }
+  .footer_logo img {
+    width: 100%;
+  }
+}
+
+.quick_links h3 {
+  font-weight: 400;
+  font-size: 32px;
+  margin: 1rem 3rem 0 0;
+  font-family: "Raleway-Regular";
+}
+.quick_links ul {
+  padding: 0 0 0 0.5rem;
+  width: max-content;
+}
+.quick_links ul li {
+  list-style: none;
+  position: relative;
+  cursor: pointer;
+  width: max-content;
+  user-select: none;
+  margin: 0.5rem 0;
+}
+.quick_links ul li::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background-color: green;
+  border-radius: 5px;
+  bottom: -3px;
+  right: 0;
+  transition: width 0.4s;
+}
+.quick_links ul li:hover::after {
+  width: 100%;
+  left: 0;
+  transition: all 0.4s;
+}
+@media (max-width: 767px) {
+  .quick_links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .quick_links h3 {
+    margin: 0 auto;
+  }
+}
+
+.mail_details {
+  display: flex;
+  flex-direction: column;
+}
+.mail_details span {
+  margin-top: 1rem;
+  width: max-content;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s;
+}
+.mail_details span:hover {
+  color: green;
+}
+.mail_details h3 {
+  font-weight: 400;
+  font-family: "Raleway-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 32px;
+  margin: 1rem 3rem 0 0;
+}
+@media (max-width: 767px) {
+  .mail_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mail_details h3 {
+    margin: 0 auto;
+  }
+}
+
+.social_accounts {
+  margin-top: 0.5rem;
+}
+.social_accounts span {
+  font-weight: bold;
+}
+.social_accounts div {
+  display: flex;
+}
+.social_accounts div img {
+  height: 32px;
+  width: 32px;
+  margin: 0.5rem;
+  cursor: pointer;
+  animation: shake-reverse 0.5s forwards ease;
+}
+.social_accounts div img:hover {
+  animation: shake 0.5s forwards ease;
+}
+@media (max-width: 767px) {
+  .social_accounts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .social_accounts h3 {
+    margin: 0 auto;
+  }
+}
+
+.copyright {
+  margin: 0 auto;
+  width: max-content;
+  padding: 1rem 0 1rem 0;
+}
+@media (max-width: 767px) {
+  .copyright {
+    width: auto;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+@keyframes shake-reverse {
+  0% {
+    transform: rotate(10deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  75% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

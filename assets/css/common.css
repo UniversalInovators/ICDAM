@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("/assets/fonts/Raleway-Regular.ttf");
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-Regular.woff2");
+}
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/assets/fonts/SourceSansPro-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "SourceSansPro-Black";
+  src: url("/assets/fonts/SourceSansPro-Black.ttf");
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: SourceSansPro, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #e9ecf1 !important;
+}
+body #land {
+  display: none;
+}
+@media (orientation: landscape) and (max-width: 991px) {
+  body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  body * {
+    display: none !important;
+  }
+  body #land {
+    display: block !important;
+    width: max-content;
+    margin: auto;
+  }
+}
+
+a {
+  color: inherit;
+  border: none;
+  text-decoration: none;
+}
+
+#loader {
+  border: 12px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 12px solid #444444;
+  width: 70px;
+  z-index: 100000 !important;
+  height: 70px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.center {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/*# sourceMappingURL=common.css.map */

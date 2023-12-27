@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("/assets/fonts/Raleway-Regular.ttf");
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-Regular.woff2");
+}
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/assets/fonts/SourceSansPro-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "SourceSansPro-Black";
+  src: url("/assets/fonts/SourceSansPro-Black.ttf");
+}
+body {
+  margin: 0;
+  font-family: "Inter";
+  box-sizing: border-box;
+  padding: 4rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 575px) {
+  body {
+    padding: 5vw;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+h1 {
+  margin: 0;
+}
+@media (max-width: 575px) {
+  h1 {
+    font-size: 12vw;
+    margin-bottom: 2rem;
+  }
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.adminAnchors {
+  text-decoration: none;
+  font-family: "Raleway-Regular";
+  margin: 1rem auto;
+  color: #000;
+  font-size: 4rem;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  width: max-content;
+}
+.adminAnchors:hover {
+  color: #39f;
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+  .adminAnchors {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 991px) and (min-width: 576px) {
+  .adminAnchors {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+  }
+}
+@media (max-width: 575px) {
+  .adminAnchors {
+    font-size: 6vw;
+    margin: 1vw;
+  }
+}
+
+/*# sourceMappingURL=adminroutes.css.map */

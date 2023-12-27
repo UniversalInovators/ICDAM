@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("/assets/fonts/Raleway-Regular.ttf");
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-Regular.woff2");
+}
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/assets/fonts/SourceSansPro-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "SourceSansPro-Black";
+  src: url("/assets/fonts/SourceSansPro-Black.ttf");
+}
+.venue_container {
+  padding: 6rem 0 0 0;
+  width: 90%;
+  margin: 2rem auto;
+}
+@media (max-width: 767px) {
+  .venue_container {
+    padding: 0;
+    margin: 2rem 0;
+    width: 100%;
+  }
+}
+
+.main_container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 70%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.main_container .section_heading {
+  margin: 0 auto;
+  padding-bottom: 0.2rem;
+  width: max-content;
+  border-bottom: 4px solid #005499;
+}
+@media (max-width: 767px) {
+  .main_container {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 0;
+  }
+}
+
+/*# sourceMappingURL=venue.css.map */
